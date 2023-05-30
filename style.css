@@ -433,6 +433,7 @@ background-image: url("img/printer.png");
   max-width: 100%;
   margin: 0;
   padding: 0;
+  white-space: nowrap;
 }
 .header-content {
   display: flex;
