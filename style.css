@@ -475,6 +475,7 @@ background-image: url("img/printer.png");
   height: 55px;
   left: 0;
   width: 100%;
+  min-width: 1197px;
   z-index: 9999;
   margin-top: 30px;
   padding: 0;
