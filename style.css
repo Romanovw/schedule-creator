@@ -1,4 +1,7 @@
-
+body {
+  padding: 0;
+  margin: 0;
+}
 .table-container {
   display: flex;
   align-items: flex-start;
@@ -474,11 +477,9 @@ background-image: url("img/printer.png");
   width: 100%;
   z-index: 9999;
   margin-top: 30px;
+  padding: 0;
   color: white;
-  right: 0;
-  bottom: 0;
-  position: fixed;
-  white-space: nowrap;
+  position: relative;
 }
 .footer-content {
   align-items: center;
