@@ -513,3 +513,10 @@ background-image: url("img/printer.png");
   margin-top: 3px;
   font-size: 12px;
 }
+@media screen and (max-width: 600px) {
+  .footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+  }
+}
