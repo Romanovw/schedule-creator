@@ -1,0 +1,605 @@
+
+.table-container {
+  display: flex;
+  align-items: flex-start;
+  margin-left: 2%;
+  margin-right: 2%;
+  margin-top: 70px;
+}
+
+/* Стиль таблицы графика*/
+#schedule {
+  border-collapse: collapse;
+  width: 80%;
+  font-family: Arial, sans-serif;
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 6px;
+  margin-bottom: 30px; /*значение отступа в пикселях*/
+  margin-top: 20px; /*значение отступа в пикселях*/
+}
+
+#schedule caption {
+  font-size: 1em;
+  font-weight: bold;
+  margin-bottom: 30px;
+  color: #555;
+}
+
+#schedule th {
+  background-color: #efefef;
+  padding: 12px;
+  text-align: center;
+  font-weight: bold;
+  color: #333;
+  text-transform: uppercase;
+  border-bottom: 1px solid #333;
+  border: 1px solid #c9c6c6;
+  font-size: 12px;
+}
+
+#schedule td {
+  border: 1px solid #c9c6c6;
+  padding: 10px;
+  text-align: center;
+  font-weight: normal;
+  color: #444444;
+  position: relative;
+  transition: background-color 0.3s ease;
+  font-size: 12px;
+  white-space: nowrap;
+}
+
+td.time {
+  background-color: #f0f0f0;
+}
+
+
+
+#schedule tr:hover td:hover {
+  background-color: #ebebeb;
+}
+
+#schedule span {
+  display: inline-block;
+  padding: 3px 3px;
+  background-color: #f0f0f0;
+  border-radius: 4px;
+  color: #333;
+}
+
+#schedule button {
+  background-image: url("img/reload.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain; /* или cover, в зависимости от предпочтений */
+  width: 25px;
+  height: 25px;
+  border: none;
+  cursor: pointer;
+  text-indent: -9999px; /* скрыть текст кнопки */
+  margin-left: 10px;
+  background-color: transparent;
+}
+
+#schedule button:hover {
+  background-color: rgba(255, 255, 255, 0); /* Transparent white */
+}
+
+#schedule input[type="text"] {
+  font-size: 15px;
+  box-sizing: border-box; /* Учитываем padding в общей ширине элемента */
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  color: #333;
+  font-size: 15px;
+  padding: 2px; /* Увеличьте значение padding по вашему выбору */
+  width: 60px; /* Ширина поля занимает 100% доступной ширины */
+}
+
+
+/* Стиль таблицы с количеством смен*/
+#countSh {
+  border-collapse: collapse;
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 6px;
+  max-width: 20%; /* Установите ширину таблицы countSh по вашему усмотрению */
+  margin-top: +73px; /* Установите отрицательное значение, равное высоте названия таблицы #schedule */
+  margin-left: 40px;
+
+}
+
+#countSh th {
+  border: 1px solid #c9c6c6;
+  background-color: #fafafa;
+  padding: 10px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 12px;
+  color: #333;
+  text-transform: uppercase;
+}
+
+#countSh td {
+  border: 1px solid #c9c6c6;
+  padding: 5px;
+  text-align: center;
+  font-weight: normal;
+  color: #666;
+  position: relative;
+  transition: background-color 0.3s ease;
+  font-size: 12px;
+  height: 12px;
+  vertical-align: middle; /* Выравнивание содержимого ячеек по центру */
+}
+
+#countSh tr:nth-child(even) {
+  background-color: white;
+}
+
+/*#countSh tr:hover td:hover {
+  background-color: #ebebeb;
+}*/
+
+#countSh span {
+  display: inline-block;
+  padding: 6px 10px;
+  background-color: #f0f0f0;
+  border-radius: 4px;
+  color: #333;
+}
+
+#countSh button {
+  border: none;
+  background-color: #4caf50;
+  color: white;
+  cursor: pointer;
+  padding: 6px 12px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+#countSh button:hover {
+  background-color: #45a049;
+}
+
+/*стиль таблицы доступности*/
+.table-container2 {
+  margin-left: 2%; /* Отступ слева */
+  margin-right: 2%; /* Отступ справа */
+  margin-top: 20px;
+}
+
+#availability {
+  border-collapse: collapse;
+  font-family: Arial, sans-serif;
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 6px;
+  width: 100%;
+}
+
+#availability caption {
+  font-size: 1em;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #555;
+}
+
+#availability th {
+  border: 1px solid #c9c6c6;
+  background-color: #efefef;
+  padding: 12px;
+  text-align: center;
+  font-weight: bold;
+  color: #333;
+  text-transform: uppercase;
+  font-size: 12px;
+  white-space: nowrap;
+ 
+}
+
+#availability td {
+  border: 1px solid #c9c6c6;
+  font-size: 12px;
+  text-align: center;
+  font-weight: normal;
+  color: #666;
+  position: relative;
+  transition: background-color 0.3s ease;
+  padding: 10px;
+  white-space: nowrap;
+}
+
+#availability tr:nth-child(even) {
+  background-color: #f5f5f5;
+}
+
+#availability tr:hover td:hover {
+  background-color: #ebebeb;
+}
+
+#availability span {
+  display: inline-block;
+  padding: 10px 10px;
+  background-color: #f0f0f0;
+  border-radius: 4px;
+  color: #333;
+}
+
+#availability input::placeholder {
+  font-size: 12px;
+  padding: 15px; /* Увеличьте значение padding по вашему выбору */
+}
+
+#availability input[type="text"] {
+  font-size: 12px;
+  padding: 3px; /* Увеличьте значение padding по вашему выбору */
+  width: 50%; /* Ширина поля занимает 100% доступной ширины */
+  box-sizing: border-box; /* Учитываем padding в общей ширине элемента */
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  color: #333;
+  font-size: 12px;
+}
+
+#availability td:first-child {
+  text-align: left;
+  width: 150px; /* Установите значение ширины столбца по вашему выбору */
+}
+
+#availability input[type="text"] {
+  width: calc(100% - 50px); /* Ширина поля ввода занимает доступную ширину минус ширина кнопки и отступы */
+  box-sizing: border-box; /* Учитываем padding и border в общей ширине элемента */
+  text-align: left;
+}
+
+.full{
+  background-image: url("img/shuffle2.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain; /* или cover, в зависимости от предпочтений */
+  width: 35px;
+  height: 25px;
+  border: none;
+  cursor: pointer;
+  text-indent: -9999px; /* скрыть текст кнопки */
+  margin-left: 10px;
+  background-color: transparent;
+}
+
+#availability input[type="text"]::placeholder {
+  text-indent: -15px; /* Установите отрицательное значение для смещения плейсхолдера влево */
+  
+}
+
+/* Стилизация чекбоксов */
+#availability td input[type="checkbox"] {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 15px;
+  height: 15px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  outline: none;
+  cursor: pointer;
+  vertical-align: bottom;
+}
+
+/* Стилизация отмеченного чекбокса */
+#availability td input[type="checkbox"]:checked {
+  background-color: #a4a4a4;
+  border-color: #a4a4a4;
+}
+
+/* Стилизация метки чекбокса */
+#availability td input[type="checkbox"] + label {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 5px;
+  color: #333;
+  cursor: pointer;
+}
+
+/* Стилизация метки чекбокса при наведении */
+#availability td input[type="checkbox"] + label:hover {
+  text-decoration: underline;
+}
+
+
+.dropdown-cell {
+  position: relative;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  padding: 12px 16px;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  color: #666;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  width: auto;
+  left: 0;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  padding: 12px 16px;
+  font-family: Arial, sans-serif;
+  font-size: 12px;
+  color: #666;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  z-index: 999
+}
+
+.dropdown-menu-item {
+  padding: 8px 0;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.dropdown-menu-item:hover {
+  background-color: #ebebeb;
+}
+
+.dropdown-menu-item:last-child {
+  margin-bottom: 0;
+}
+
+#nameAuto {
+  background-image: url("img/fill1.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain; /* или cover, в зависимости от предпочтений */
+  width: 30px;
+  height: 30px;
+  border: none;
+  cursor: pointer;
+  text-indent: -9999px; /* скрыть текст кнопки */
+  margin-left: 30px;
+  background-color: transparent;
+}
+
+#generate {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain; /* или cover, в зависимости от предпочтений */
+  width: 150px;
+  height: 40px;
+  border: none;
+  cursor: pointer;
+  margin-left: 2.4%;
+  border-radius: 5px; /* Задайте значение радиуса скругления краев */
+  font-size: 14px; /* Задайте желаемый размер текста внутри кнопки */
+  background-color: #e4e9ed; /* Задайте желаемый серый цвет кнопки */
+  transition: background-color 0.1s ease; /* Добавьте плавный переход для изменения цвета при наведении */
+  font-weight: bold;
+  color: #4D4D4D;
+}
+
+#generate:hover {
+  background-color: #d2d4dc; /* Задайте желаемый более темный цвет при наведении */
+}
+
+@media print {
+
+  body * {
+    visibility: hidden;
+  }
+  #schedule, #schedule * {
+    visibility: visible;
+  }
+  #schedule {
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+
+  #schedule {
+  border-collapse: collapse;
+  width: 100%;
+  font-family: Arial, sans-serif;
+  margin-bottom: 30px; /*значение отступа в пикселях*/
+  margin-top: 20px; /*значение отступа в пикселях*/
+}
+  
+
+  #schedule caption {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 30px;
+    color: #000000;
+  }
+
+  #schedule th {
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+    color: #000000;
+    border: 1px solid #000000;
+  }
+
+  #schedule td {
+    border: 1px solid #000000;
+    padding: 5px;
+    text-align: center;
+    color: #000000;
+    position: center;
+  }
+
+
+  #schedule button {
+    visibility: hidden;
+  }
+
+  @page {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 30;
+    margin-right: 30;
+  }
+  
+  @page :first {
+    margin-top: 30;
+  }
+  
+  @page {
+    /* Скрыть заголовок на всех страницах при печати */
+    header {
+      display: none;
+    }
+  }
+  .hidden-content {
+    display: none;
+  }
+}
+
+/* #printButton {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 150px;
+  height: 40px;
+  border: none;
+  cursor: pointer;
+  margin-left: 2%;
+  border-radius: 5px; 
+  font-size: 14px;
+  background-color: #e4e9ed;
+  transition: background-color 0.1s ease;
+  font-weight: bold;
+  color: #4D4D4D;
+}
+
+#printButton:hover {
+  background-color: #d2d4dc;
+} */
+#printButton {
+background-image: url("img/printer.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain; /* или cover, в зависимости от предпочтений */
+  width: 40px;
+  height: 40px;
+  border: none;
+  cursor: pointer;
+  text-indent: -9999px; /* скрыть текст кнопки */
+  margin-left: 20px;
+  background-color: transparent;
+}
+
+.header {
+  background-color: #24292e;
+  height: 60px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9999;
+  margin-bottom: 10px;
+}
+
+.container {
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.logo img {
+  height: 50px; /* Задайте желаемую высоту логотипа */
+  margin-top: 5px;
+  margin-left: 10%;
+  margin-right: 20px;
+
+}
+
+.nav-links ul {
+  list-style: none;
+  display: flex;
+  justify-content: flex-start; /* Смещение влево */
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li {
+  margin-left: 25px; /* Задайте желаемый отступ между ссылками */
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #fff; /* Задайте белый цвет текста */
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  
+}
+
+.nav-links a.active {
+  border-bottom: 1px solid white;
+  padding-bottom: 10px;
+}
+
+.footer {
+  background-color: #24292e;
+  height: 55px;
+  position: fixed;
+  left: 0;
+  width: 100%;
+  z-index: 9999;
+  margin-top: 30px;
+  color: white;
+}
+
+.footer-content {
+  
+  align-items: center; /* Выравнивание элементов по вертикали */
+}
+.container {
+  display:flex;
+  padding-right: 20px;
+}
+.autor{
+  margin-left: 20%;
+  font-size: 17px;
+  color: #c7c7c7;
+  margin-top: 15px;
+}
+.contact {
+  margin-left: 20%;
+  color: #c7c7c7;
+  font-size: 17px;
+  margin-top: 15px;
+}
+/* Дополнительные стили для ссылок или других элементов внутри футера */
+.footer a {
+  color: #8e8e8e; /* Цвет ссылок в футере */
+  text-decoration: none; /* Убрать подчеркивание у ссылок */
+  margin-right: 20px; 
+  margin-left: 20px;
+  display: block;
+  margin-bottom: 3px;
+  margin-top: 3px;
+  font-size: 12px;
+}
+.footer {
+  position: absolute;
+  width: 100%;
+}
