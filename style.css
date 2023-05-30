@@ -508,9 +508,7 @@ background-image: url("img/printer.png");
   font-size: 12px;
 }
 .footer {
-  right: 0;
-  bottom: 0;
-  position: fixed;
+  position: absolute;
   width: 100%;
   white-space: nowrap;
 }
