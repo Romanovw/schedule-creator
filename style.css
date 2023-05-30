@@ -469,12 +469,13 @@ background-image: url("img/printer.png");
 .footer {
   background-color: #24292e;
   height: 55px;
-  position: fixed;
   left: 0;
   width: 100%;
   z-index: 9999;
   margin-top: 30px;
   color: white;
+  position: absolute;
+  white-space: nowrap;
 }
 .footer-content {
   align-items: center;
@@ -506,9 +507,4 @@ background-image: url("img/printer.png");
   margin-bottom: 3px;
   margin-top: 3px;
   font-size: 12px;
-}
-.footer {
-  position: absolute;
-  width: 100%;
-  white-space: nowrap;
 }
