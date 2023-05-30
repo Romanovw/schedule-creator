@@ -156,7 +156,6 @@ td.time {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   border-radius: 6px;
   width: 100%;
-  margin-bottom: 70px;
 }
 #availability caption {
   font-size: 1em;
@@ -477,7 +476,7 @@ background-image: url("img/printer.png");
   width: 100%;
   min-width: 1197px;
   z-index: 9999;
-  margin-top: 30px;
+  margin-top: 20px;
   padding: 0;
   color: white;
   position: relative;
