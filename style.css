@@ -478,6 +478,7 @@ background-image: url("img/printer.png");
 }
 .footer-content {
   align-items: center;
+  white-space: nowrap;
 }
 .container {
   display:flex;
@@ -509,4 +510,5 @@ background-image: url("img/printer.png");
 .footer {
   position: absolute;
   width: 100%;
+  white-space: nowrap;
 }
