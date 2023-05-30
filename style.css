@@ -6,8 +6,6 @@
   margin-right: 2%;
   margin-top: 70px;
 }
-
-/* Стиль таблицы графика*/
 #schedule {
   border-collapse: collapse;
   width: 80%;
@@ -15,17 +13,15 @@
   background-color: #ffffff;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   border-radius: 6px;
-  margin-bottom: 30px; /*значение отступа в пикселях*/
-  margin-top: 20px; /*значение отступа в пикселях*/
+  margin-bottom: 30px;
+  margin-top: 20px;
 }
-
 #schedule caption {
   font-size: 1em;
   font-weight: bold;
   margin-bottom: 30px;
   color: #555;
 }
-
 #schedule th {
   background-color: #efefef;
   padding: 12px;
@@ -37,7 +33,6 @@
   border: 1px solid #c9c6c6;
   font-size: 12px;
 }
-
 #schedule td {
   border: 1px solid #c9c6c6;
   padding: 10px;
@@ -49,17 +44,12 @@
   font-size: 12px;
   white-space: nowrap;
 }
-
 td.time {
   background-color: #f0f0f0;
 }
-
-
-
 #schedule tr:hover td:hover {
   background-color: #ebebeb;
 }
-
 #schedule span {
   display: inline-block;
   padding: 3px 3px;
@@ -67,51 +57,43 @@ td.time {
   border-radius: 4px;
   color: #333;
 }
-
 #schedule button {
   background-image: url("img/reload.png");
   background-repeat: no-repeat;
   background-position: center;
-  background-size: contain; /* или cover, в зависимости от предпочтений */
+  background-size: contain;
   width: 25px;
   height: 25px;
   border: none;
   cursor: pointer;
-  text-indent: -9999px; /* скрыть текст кнопки */
+  text-indent: -9999px;
   margin-left: 10px;
   background-color: transparent;
 }
-
 #schedule button:hover {
-  background-color: rgba(255, 255, 255, 0); /* Transparent white */
+  background-color: rgba(255, 255, 255, 0);
 }
-
 #schedule input[type="text"] {
   font-size: 15px;
-  box-sizing: border-box; /* Учитываем padding в общей ширине элемента */
+  box-sizing: border-box;
   background-color: #ffffff;
   border: 1px solid #ccc;
   border-radius: 5px;
   color: #333;
   font-size: 15px;
-  padding: 2px; /* Увеличьте значение padding по вашему выбору */
-  width: 60px; /* Ширина поля занимает 100% доступной ширины */
+  padding: 2px;
+  width: 60px; 
 }
-
-
-/* Стиль таблицы с количеством смен*/
 #countSh {
   border-collapse: collapse;
   font-family: Arial, sans-serif;
   background-color: #f9f9f9;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   border-radius: 6px;
-  max-width: 20%; /* Установите ширину таблицы countSh по вашему усмотрению */
-  margin-top: +73px; /* Установите отрицательное значение, равное высоте названия таблицы #schedule */
+  max-width: 20%;
+  margin-top: +73px;
   margin-left: 40px;
-
 }
-
 #countSh th {
   border: 1px solid #c9c6c6;
   background-color: #fafafa;
@@ -122,7 +104,6 @@ td.time {
   color: #333;
   text-transform: uppercase;
 }
-
 #countSh td {
   border: 1px solid #c9c6c6;
   padding: 5px;
@@ -133,17 +114,14 @@ td.time {
   transition: background-color 0.3s ease;
   font-size: 12px;
   height: 12px;
-  vertical-align: middle; /* Выравнивание содержимого ячеек по центру */
+  vertical-align: middle;
 }
-
 #countSh tr:nth-child(even) {
   background-color: white;
 }
-
 /*#countSh tr:hover td:hover {
   background-color: #ebebeb;
 }*/
-
 #countSh span {
   display: inline-block;
   padding: 6px 10px;
@@ -151,7 +129,6 @@ td.time {
   border-radius: 4px;
   color: #333;
 }
-
 #countSh button {
   border: none;
   background-color: #4caf50;
@@ -161,18 +138,14 @@ td.time {
   border-radius: 4px;
   transition: background-color 0.3s ease;
 }
-
 #countSh button:hover {
   background-color: #45a049;
 }
-
-/*стиль таблицы доступности*/
 .table-container2 {
-  margin-left: 2%; /* Отступ слева */
-  margin-right: 2%; /* Отступ справа */
+  margin-left: 2%;
+  margin-right: 2%; 
   margin-top: 20px;
 }
-
 #availability {
   border-collapse: collapse;
   font-family: Arial, sans-serif;
@@ -181,14 +154,12 @@ td.time {
   border-radius: 6px;
   width: 100%;
 }
-
 #availability caption {
   font-size: 1em;
   font-weight: bold;
   margin-bottom: 20px;
   color: #555;
 }
-
 #availability th {
   border: 1px solid #c9c6c6;
   background-color: #efefef;
@@ -199,9 +170,7 @@ td.time {
   text-transform: uppercase;
   font-size: 12px;
   white-space: nowrap;
- 
 }
-
 #availability td {
   border: 1px solid #c9c6c6;
   font-size: 12px;
@@ -213,15 +182,12 @@ td.time {
   padding: 10px;
   white-space: nowrap;
 }
-
 #availability tr:nth-child(even) {
   background-color: #f5f5f5;
 }
-
 #availability tr:hover td:hover {
   background-color: #ebebeb;
 }
-
 #availability span {
   display: inline-block;
   padding: 10px 10px;
@@ -229,55 +195,47 @@ td.time {
   border-radius: 4px;
   color: #333;
 }
-
 #availability input::placeholder {
   font-size: 12px;
-  padding: 15px; /* Увеличьте значение padding по вашему выбору */
+  padding: 15px;
 }
-
 #availability input[type="text"] {
   font-size: 12px;
-  padding: 3px; /* Увеличьте значение padding по вашему выбору */
-  width: 50%; /* Ширина поля занимает 100% доступной ширины */
-  box-sizing: border-box; /* Учитываем padding в общей ширине элемента */
+  padding: 3px;
+  width: 50%;
+  box-sizing: border-box;
   background-color: #ffffff;
   border: 1px solid #ccc;
   border-radius: 5px;
   color: #333;
   font-size: 12px;
 }
-
 #availability td:first-child {
   text-align: left;
-  width: 150px; /* Установите значение ширины столбца по вашему выбору */
+  width: 150px;
 }
-
 #availability input[type="text"] {
-  width: calc(100% - 50px); /* Ширина поля ввода занимает доступную ширину минус ширина кнопки и отступы */
-  box-sizing: border-box; /* Учитываем padding и border в общей ширине элемента */
+  width: calc(100% - 50px);
+  box-sizing: border-box;
   text-align: left;
 }
-
 .full{
   background-image: url("img/shuffle2.png");
   background-repeat: no-repeat;
   background-position: center;
-  background-size: contain; /* или cover, в зависимости от предпочтений */
+  background-size: contain;
   width: 35px;
   height: 25px;
   border: none;
   cursor: pointer;
-  text-indent: -9999px; /* скрыть текст кнопки */
+  text-indent: -9999px;
   margin-left: 10px;
   background-color: transparent;
 }
-
 #availability input[type="text"]::placeholder {
-  text-indent: -15px; /* Установите отрицательное значение для смещения плейсхолдера влево */
-  
+  text-indent: -15px; 
 }
 
-/* Стилизация чекбоксов */
 #availability td input[type="checkbox"] {
   appearance: none;
   -webkit-appearance: none;
@@ -291,13 +249,11 @@ td.time {
   vertical-align: bottom;
 }
 
-/* Стилизация отмеченного чекбокса */
 #availability td input[type="checkbox"]:checked {
   background-color: #a4a4a4;
   border-color: #a4a4a4;
 }
 
-/* Стилизация метки чекбокса */
 #availability td input[type="checkbox"] + label {
   display: inline-block;
   vertical-align: middle;
@@ -306,11 +262,9 @@ td.time {
   cursor: pointer;
 }
 
-/* Стилизация метки чекбокса при наведении */
 #availability td input[type="checkbox"] + label:hover {
   text-decoration: underline;
 }
-
 
 .dropdown-cell {
   position: relative;
@@ -330,7 +284,6 @@ td.time {
   width: auto;
   left: 0;
 }
-
 .dropdown-menu {
   display: none;
   position: absolute;
@@ -344,58 +297,51 @@ td.time {
   border: 1px solid #ccc;
   z-index: 999
 }
-
 .dropdown-menu-item {
   padding: 8px 0;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
-
 .dropdown-menu-item:hover {
   background-color: #ebebeb;
 }
-
 .dropdown-menu-item:last-child {
   margin-bottom: 0;
 }
-
 #nameAuto {
   background-image: url("img/fill1.png");
   background-repeat: no-repeat;
   background-position: center;
-  background-size: contain; /* или cover, в зависимости от предпочтений */
+  background-size: contain;
   width: 30px;
   height: 30px;
   border: none;
   cursor: pointer;
-  text-indent: -9999px; /* скрыть текст кнопки */
+  text-indent: -9999px;
   margin-left: 30px;
   background-color: transparent;
 }
-
 #generate {
   background-repeat: no-repeat;
   background-position: center;
-  background-size: contain; /* или cover, в зависимости от предпочтений */
+  background-size: contain;
   width: 150px;
   height: 40px;
   border: none;
   cursor: pointer;
   margin-left: 2.4%;
-  border-radius: 5px; /* Задайте значение радиуса скругления краев */
-  font-size: 14px; /* Задайте желаемый размер текста внутри кнопки */
-  background-color: #e4e9ed; /* Задайте желаемый серый цвет кнопки */
-  transition: background-color 0.1s ease; /* Добавьте плавный переход для изменения цвета при наведении */
+  border-radius: 5px;
+  font-size: 14px;
+  background-color: #e4e9ed;
+  transition: background-color 0.1s ease;
   font-weight: bold;
   color: #4D4D4D;
 }
 
 #generate:hover {
-  background-color: #d2d4dc; /* Задайте желаемый более темный цвет при наведении */
+  background-color: #d2d4dc;
 }
-
 @media print {
-
   body * {
     visibility: hidden;
   }
@@ -412,8 +358,8 @@ td.time {
   border-collapse: collapse;
   width: 100%;
   font-family: Arial, sans-serif;
-  margin-bottom: 30px; /*значение отступа в пикселях*/
-  margin-top: 20px; /*значение отступа в пикселях*/
+  margin-bottom: 30px;
+  margin-top: 20px;
 }
   
 
@@ -431,7 +377,6 @@ td.time {
     color: #000000;
     border: 1px solid #000000;
   }
-
   #schedule td {
     border: 1px solid #000000;
     padding: 5px;
@@ -439,25 +384,19 @@ td.time {
     color: #000000;
     position: center;
   }
-
-
   #schedule button {
     visibility: hidden;
   }
-
   @page {
     margin-top: 30px;
     margin-bottom: 30px;
     margin-left: 30;
     margin-right: 30;
   }
-  
   @page :first {
     margin-top: 30;
   }
-  
   @page {
-    /* Скрыть заголовок на всех страницах при печати */
     header {
       display: none;
     }
@@ -467,40 +406,19 @@ td.time {
   }
 }
 
-/* #printButton {
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-  width: 150px;
-  height: 40px;
-  border: none;
-  cursor: pointer;
-  margin-left: 2%;
-  border-radius: 5px; 
-  font-size: 14px;
-  background-color: #e4e9ed;
-  transition: background-color 0.1s ease;
-  font-weight: bold;
-  color: #4D4D4D;
-}
-
-#printButton:hover {
-  background-color: #d2d4dc;
-} */
 #printButton {
 background-image: url("img/printer.png");
   background-repeat: no-repeat;
   background-position: center;
-  background-size: contain; /* или cover, в зависимости от предпочтений */
+  background-size: contain;
   width: 40px;
   height: 40px;
   border: none;
   cursor: pointer;
-  text-indent: -9999px; /* скрыть текст кнопки */
+  text-indent: -9999px;
   margin-left: 20px;
   background-color: transparent;
 }
-
 .header {
   background-color: #24292e;
   height: 60px;
@@ -511,52 +429,42 @@ background-image: url("img/printer.png");
   z-index: 9999;
   margin-bottom: 10px;
 }
-
 .container {
   max-width: 100%;
   margin: 0;
   padding: 0;
 }
-
 .header-content {
   display: flex;
   align-items: center;
   padding: 0 20px;
 }
-
 .logo img {
-  height: 50px; /* Задайте желаемую высоту логотипа */
+  height: 50px;
   margin-top: 5px;
   margin-left: 10%;
   margin-right: 20px;
-
 }
-
 .nav-links ul {
   list-style: none;
   display: flex;
-  justify-content: flex-start; /* Смещение влево */
+  justify-content: flex-start;
   margin: 0;
   padding: 0;
 }
-
 .nav-links li {
-  margin-left: 25px; /* Задайте желаемый отступ между ссылками */
+  margin-left: 25px;
 }
-
 .nav-links a {
   text-decoration: none;
-  color: #fff; /* Задайте белый цвет текста */
+  color: #fff;
   font-family: Arial, sans-serif;
   font-size: 14px;
-  
 }
-
 .nav-links a.active {
   border-bottom: 1px solid white;
   padding-bottom: 10px;
 }
-
 .footer {
   background-color: #24292e;
   height: 55px;
@@ -567,10 +475,8 @@ background-image: url("img/printer.png");
   margin-top: 30px;
   color: white;
 }
-
 .footer-content {
-  
-  align-items: center; /* Выравнивание элементов по вертикали */
+  align-items: center;
 }
 .container {
   display:flex;
@@ -588,10 +494,9 @@ background-image: url("img/printer.png");
   font-size: 17px;
   margin-top: 15px;
 }
-/* Дополнительные стили для ссылок или других элементов внутри футера */
 .footer a {
-  color: #8e8e8e; /* Цвет ссылок в футере */
-  text-decoration: none; /* Убрать подчеркивание у ссылок */
+  color: #8e8e8e;
+  text-decoration: none;
   margin-right: 20px; 
   margin-left: 20px;
   display: block;
