@@ -1152,3 +1152,76 @@ const printButton = document.getElementById ('printButton');
           link.classList.add('active');
         }
       });
+      //Delete schedule
+      function deleteAll (person){
+        if (person.style.color !== 'red'){
+            person.textContent = "";
+            }
+      }
+      const deleteButton = document.getElementById ('deleteButton');
+      deleteButton.addEventListener('click', function() {
+            deleteAll (mon11);
+            deleteAll (mon12);
+            deleteAll (mon13);
+            deleteAll (mon14);
+            deleteAll (mon21);
+            deleteAll (mon22);
+            deleteAll (mon23);
+            deleteAll (mon24);
+
+            deleteAll (tue11);
+            deleteAll (tue12);
+            deleteAll (tue13);
+            deleteAll (tue14);
+            deleteAll (tue21);
+            deleteAll (tue22);
+            deleteAll (tue23);
+            deleteAll (tue24);
+
+            deleteAll (wed11);
+            deleteAll (wed12);
+            deleteAll (wed13);
+            deleteAll (wed14);
+            deleteAll (wed21);
+            deleteAll (wed22);
+            deleteAll (wed23);
+            deleteAll (wed24);
+
+            deleteAll (thu11);
+            deleteAll (thu12);
+            deleteAll (thu13);
+            deleteAll (thu14);
+            deleteAll (thu21);
+            deleteAll (thu22);
+            deleteAll (thu23);
+            deleteAll (thu24);
+
+            deleteAll (fri11);
+            deleteAll (fri12);
+            deleteAll (fri13);
+            deleteAll (fri14);
+            deleteAll (fri21);
+            deleteAll (fri22);
+            deleteAll (fri23);
+            deleteAll (fri24);
+
+            deleteAll (sat11);
+            deleteAll (sat12);
+            deleteAll (sat13);
+            deleteAll (sat14);
+            deleteAll (sat21);
+            deleteAll (sat22);
+            deleteAll (sat23);
+            deleteAll (sat24);
+
+            deleteAll (sun11);
+            deleteAll (sun12);
+            deleteAll (sun13);
+            deleteAll (sun14);
+            deleteAll (sun21);
+            deleteAll (sun22);
+            deleteAll (sun23);
+            deleteAll (sun24);
+            countOfShifts ();
+            
+      })
