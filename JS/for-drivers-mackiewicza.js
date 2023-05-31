@@ -1014,3 +1014,40 @@ const printButton = document.getElementById ('printButton');
           link.classList.add('active');
         }
       });
+//Delete schedule
+function deleteAll (person){
+    if (person.style.color !== 'red'){
+        person.textContent = "";
+       }
+       }
+const deleteButton = document.getElementById ('deleteButton');
+deleteButton.addEventListener('click', function() {
+    deleteAll (mon11);
+    deleteAll (mon12);
+    deleteAll (mon22);
+    deleteAll (tue11);
+    deleteAll (tue12);
+    deleteAll (tue21);
+    deleteAll (tue22);
+    deleteAll (wed11);
+    deleteAll (wed12);
+    deleteAll (wed21);
+    deleteAll (wed22);
+    deleteAll (thu11);
+    deleteAll (thu12);
+    deleteAll (thu21);
+    deleteAll (thu22);
+    deleteAll (fri11);
+    deleteAll (fri12);
+    deleteAll (fri21);
+    deleteAll (fri22);
+    deleteAll (sat11);
+    deleteAll (sat12);
+    deleteAll (sat21);
+    deleteAll (sat22);
+    deleteAll (sun11);
+    deleteAll (sun12);
+    deleteAll (sun21);
+    deleteAll (sun22);
+    countOfShifts ();
+    });
