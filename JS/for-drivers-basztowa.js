@@ -1135,52 +1135,6 @@ deleteButton.addEventListener('click', function() {
     deleteAll (sun23);
     countOfShifts ();
     });
-  //event to duties button
-      const duties = document.getElementById ('duties');
-      let dutiesClicked = true;
-      function addDuties (person1, person2, person3){
-      if (dutiesClicked){
-        person1.textContent = person1.textContent + '  (przód)';
-        person2.textContent = person2.textContent + '  (surówki)';
-        person3.textContent = person3.textContent + '  (sosy)';
-        }
-        else {
-            let originalContent1 = person1.textContent;
-            let updatedContent1 = originalContent1.replace('  (przód)', '');
-            person1.textContent = updatedContent1;
-
-            let originalContent2 = person2.textContent;
-            let updatedContent2 = originalContent2.replace('  (surówki)', '');
-            person2.textContent = updatedContent2;
-
-            let originalContent3 = person3.textContent;
-            let updatedContent3 = originalContent3.replace('  (sosy)', '');
-            person3.textContent = updatedContent3;
-        }
-    }
-      duties.addEventListener ('click', function (){
-        if(dutiesClicked){
-        addDuties (mon11, mon12, mon13);
-        addDuties (tue11, tue12, tue13);
-        addDuties (wed11, wed12, wed13);
-        addDuties (thu11, thu12, thu13);
-        addDuties (fri11, fri12, fri13);
-        addDuties (sat11, sat12, sat13);
-        addDuties (sun11, sun12, sun13);
-        dutiesClicked = false;
-        }
-        else {
-        addDuties (mon11, mon12, mon13);
-        addDuties (tue11, tue12, tue13);
-        addDuties (wed11, wed12, wed13);
-        addDuties (thu11, thu12, thu13);
-        addDuties (fri11, fri12, fri13);
-        addDuties (sat11, sat12, sat13);
-        addDuties (sun11, sun12, sun13);
-        dutiesClicked = true;
-        }
-      });
-
 //save jpg
 const saveButton = document.getElementById('saveButton');
 const table = document.getElementById('schedule');
