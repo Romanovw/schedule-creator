@@ -423,6 +423,19 @@ background-image: url("img/printer.png");
   margin-left: 20px;
   background-color: transparent;
 }
+#saveButton {
+  background-image: url("img/jpg-file.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain; /* или cover, в зависимости от предпочтений */
+    width: 40px;
+    height: 40px;
+    border: none;
+    cursor: pointer;
+    text-indent: -9999px; /* скрыть текст кнопки */
+    margin-left: 10px;
+    background-color: transparent;
+  }
 .header {
   background-color: #24292e;
   height: 60px;
