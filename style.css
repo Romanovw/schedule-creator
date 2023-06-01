@@ -543,5 +543,4 @@ background-image: url("img/printer.png");
 .buttons {
   white-space: nowrap;
   display:flex;
-  justify-content: space-between;
 }
