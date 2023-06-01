@@ -1051,3 +1051,26 @@ deleteButton.addEventListener('click', function() {
     deleteAll (sun22);
     countOfShifts ();
     });
+//save jpg
+const saveButton = document.getElementById('saveButton');
+const table = document.getElementById('schedule');
+      
+    saveButton.addEventListener('click', function() {
+    const buttons = table.querySelectorAll('button');
+    buttons.forEach(function(button) {
+        button.style.visibility = 'hidden';
+        });
+      
+    html2canvas(table)
+        .then(function(canvas) {
+        buttons.forEach(function(button) {
+        button.style.visibility = '';
+        });
+      
+        const image = canvas.toDataURL('image/jpeg', 1.0);
+        const downloadLink = document.createElement('a');
+        downloadLink.href = image;
+        downloadLink.download = 'table.jpg';
+        downloadLink.click();
+        });
+    });
