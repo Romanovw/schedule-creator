@@ -544,3 +544,23 @@ background-image: url("img/printer.png");
   white-space: nowrap;
   display:flex;
 }
+#duties {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 150px;
+  height: 40px;
+  border: none;
+  cursor: pointer;
+  margin-left: 20px;
+  border-radius: 5px;
+  font-size: 12px;
+  background-color: #e4e9ed;
+  transition: background-color 0.1s ease;
+  font-weight: bold;
+  color: #4D4D4D;
+}
+
+#duties:hover {
+  background-color: #d2d4dc;
+}
