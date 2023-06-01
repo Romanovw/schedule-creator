@@ -542,7 +542,6 @@ background-image: url("img/printer.png");
 }
 .buttons {
   white-space: nowrap;
-  display:flex;
 }
 #duties {
   background-repeat: no-repeat;
