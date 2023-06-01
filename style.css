@@ -540,3 +540,8 @@ background-image: url("img/printer.png");
 #deleteButton:hover {
   background-color: #d2d4dc;
 }
+.buttons {
+  white-space: nowrap;
+  display:flex;
+  justify-content: space-between;
+}
