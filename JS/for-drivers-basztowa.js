@@ -147,7 +147,6 @@ function handleCheckboxChange(name, checkbox, allFor, button) {
     }
   });
 }
-
 const fullButton1 = document.getElementById('full1');
 const fullButton2 = document.getElementById('full2');
 const fullButton3 = document.getElementById('full3');
@@ -400,7 +399,6 @@ handleCheckboxChange(name8, p8zm1sat, allForSat1, fullButton8);
 handleCheckboxChange(name8, p8zm2sat, allForSat2, fullButton8);
 handleCheckboxChange(name8, p8zm1sun, allForSun1, fullButton8);
 handleCheckboxChange(name8, p8zm2sun, allForSun2, fullButton8);
-
 
 let name9 = document.getElementById('name9');
 let p9zm1mon = document.getElementById('p9zm1mon');
@@ -682,7 +680,7 @@ countShifts (name10, countSh10);
 countShifts (name11, countSh11);
 countShifts (name12, countSh12);
 };  
-const tableCells = scheduleTable.querySelectorAll('td');
+const tableCells = schedule.querySelectorAll('td');
 tableCells.forEach(function(cell) {
   cell.addEventListener('input', function() {
     countOfShifts();
