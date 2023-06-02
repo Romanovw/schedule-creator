@@ -549,7 +549,6 @@ handleCheckboxChange(name12, p12zm2sat, allForSat2, fullButton12);
 handleCheckboxChange(name12, p12zm1sun, allForSun1, fullButton12);
 handleCheckboxChange(name12, p12zm2sun, allForSun2, fullButton12);
 
-
 const nameAuto = document.getElementById ('nameAuto')
 nameAuto.addEventListener('click', function(){
     name1.value = 'Gosia';
@@ -746,7 +745,7 @@ countShifts (name10, countSh10);
 countShifts (name11, countSh11);
 countShifts (name12, countSh12);
 };  
-const scheduleTable = document.getElementById('schedule');
+const tableCells = schedule.querySelectorAll('td');
 tableCells.forEach(function(cell) {
   cell.addEventListener('input', function() {
     countOfShifts();
