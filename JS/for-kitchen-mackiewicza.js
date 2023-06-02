@@ -522,7 +522,6 @@ handleCheckboxChange(name12, p12zm2sat, allForSat2, fullButton12);
 handleCheckboxChange(name12, p12zm1sun, allForSun1, fullButton12);
 handleCheckboxChange(name12, p12zm2sun, allForSun2, fullButton12);
 
-
 const nameAuto = document.getElementById ('nameAuto')
 nameAuto.addEventListener('click', function(){
     name1.value = 'Ania';
@@ -530,7 +529,7 @@ nameAuto.addEventListener('click', function(){
     name3.value = 'Asia B.';
     name4.value = 'Daniel';
     name5.value = 'Daria';
-    name6.value = 'Daniel';
+    name6.value = 'Monika';
     name7.value = 'Teresa';
 });
 
@@ -639,8 +638,7 @@ const per12 = document.getElementById('per12');
 function countOfShifts (){
 function persons (per, name){
     per.textContent = name.value
-}
-         
+}      
 persons (per1, name1);
 persons (per2, name2);
 persons (per3, name3);
@@ -652,24 +650,23 @@ persons (per8, name8);
 persons (per9, name9);
 persons (per10, name10);
 persons (per11, name11);
-persons (per12, name12);
-                                     
-         
-function countShifts (name, countSh){
+persons (per12, name12);        
+function countShifts(name, countSh) {
     let count = 0;
-    for (let i = 0, row; row = schedule.rows[i]; i++) {
-    for (let j = 0, cell; cell = row.cells[j]; j++) {
-        if (cell.textContent == name.value) {
-            count++;
+    const searchValue = name.value.toLowerCase();
+    for (let i = 0, row; (row = schedule.rows[i]); i++) {
+      for (let j = 0, cell; (cell = row.cells[j]); j++) {
+        const cellValue = cell.textContent.toLowerCase();
+        if (cellValue.includes(searchValue)) {
+          count++;
         }
-    }  
+      }
     }
     countSh.textContent = count;
-    if (name.value === '') {
-    countSh.textContent = '';
+    if (name.value === "") {
+      countSh.textContent = "";
     }
-    };
-                         
+  }                     
 countShifts (name1, countSh1);
 countShifts (name2, countSh2);
 countShifts (name3, countSh3);
@@ -683,6 +680,13 @@ countShifts (name10, countSh10);
 countShifts (name11, countSh11);
 countShifts (name12, countSh12);
 };  
+
+const tableCells = scheduleTable.querySelectorAll('td');
+tableCells.forEach(function(cell) {
+  cell.addEventListener('input', function() {
+    countOfShifts();
+  });
+});
 
 sellsMenuForDay (mon11, mon12, mon13, allForMon1);
 sellsMenuForDay (mon21, mon22, mon23, allForMon2);
@@ -716,9 +720,56 @@ const wholeDayP12 = document.getElementById ('wholeDayP12');
 // Button that launches all generation fields
 let generate = document.getElementById('generate');
 generate.addEventListener('click', function() {
+    deleteAll (mon11);
+    deleteAll (mon12);
+    deleteAll (mon13);
+    deleteAll (mon21);
+    deleteAll (mon22);
+    deleteAll (mon23);
 
-         //a function that excludes the same name on the second shift of the previous day and the first of the next 
-         function notRepeat (previousDay21, previousDay22, nextDay11, nextDay12,
+    deleteAll (tue11);
+    deleteAll (tue12);
+    deleteAll (tue13);
+    deleteAll (tue21);
+    deleteAll (tue22);
+    deleteAll (tue23);
+
+    deleteAll (wed11);
+    deleteAll (wed12);
+    deleteAll (wed13);
+    deleteAll (wed21);
+    deleteAll (wed22);
+    deleteAll (wed23);
+
+    deleteAll (thu11);
+    deleteAll (thu12);
+    deleteAll (thu13);
+    deleteAll (thu21);
+    deleteAll (thu22);
+    deleteAll (thu23);
+
+    deleteAll (fri11);
+    deleteAll (fri12);
+    deleteAll (fri13);
+    deleteAll (fri21);
+    deleteAll (fri22);
+    deleteAll (fri23);
+
+    deleteAll (sat11);
+    deleteAll (sat12);
+    deleteAll (sat13);
+    deleteAll (sat21);
+    deleteAll (sat22);
+    deleteAll (sat23);
+
+    deleteAll (sun11);
+    deleteAll (sun12);
+    deleteAll (sun13);
+    deleteAll (sun21);
+    deleteAll (sun22);
+    deleteAll (sun23);
+    //a function that excludes the same name on the second shift of the previous day and the first of the next 
+    function notRepeat (previousDay21, previousDay22, nextDay11, nextDay12,
             randomIndexNextDay11, randomIndexNextDay12, allForNextDay1, 
                     randomElementNextDay11, randomElementNextDay12, randomIndexPreviousDay21, randomIndexPreviousDay22, allForPreviousDay2, 
                     randomElementPreviousDay21, randomElementPreviousDay22,) 
@@ -779,7 +830,7 @@ generate.addEventListener('click', function() {
                         }
                         }
                         }
-         };
+     };
 
     generateForAllDays (randomIndexMon11, randomIndexMon12, allForMon1, 
                             randomElementMon11, randomElementMon12, 
