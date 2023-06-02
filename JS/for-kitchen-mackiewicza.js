@@ -147,7 +147,6 @@ function handleCheckboxChange(name, checkbox, allFor, button) {
     }
   });
 }
-
 const fullButton1 = document.getElementById('full1');
 const fullButton2 = document.getElementById('full2');
 const fullButton3 = document.getElementById('full3');
@@ -563,7 +562,6 @@ let randomIndexMon11, randomIndexMon12,
         randomElementSun11, randomElementSun12,
         randomElementSun21, randomElementSun22;
 
-
     function generateForAllDays (randomIndex1, randomIndex2, allForZm,  //element generating function
          randomElement1, randomElement2, person1, person2,) {
   
@@ -680,8 +678,7 @@ countShifts (name10, countSh10);
 countShifts (name11, countSh11);
 countShifts (name12, countSh12);
 };  
-
-const tableCells = scheduleTable.querySelectorAll('td');
+const tableCells = schedule.querySelectorAll('td');
 tableCells.forEach(function(cell) {
   cell.addEventListener('input', function() {
     countOfShifts();
