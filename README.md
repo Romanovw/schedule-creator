@@ -15,5 +15,4 @@ A web application that offers the following functionalities:
 - Print schedule functionality
 - 4 versions tailored to the required number of employees per shift
 
-## Link
-romanovw.github.io/schedule-creator/
+[Visit the Schedule Creator](https://romanovw.github.io/schedule-creator/)
