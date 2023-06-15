@@ -209,6 +209,7 @@
         <th id="friday2" colspan="2">Piątek</th>
         <th id="saturday2" colspan="2">Sobota</th>
         <th id="sunday2" colspan="2">Niedziela</th>
+        <th id="allDay">Zgoda na całość</th>
       </tr>
       <tr>
         <td><input type='text' id="name1" placeholder='Imię pracownika'> <button class="full" id="full1">Full</button></td>
@@ -226,6 +227,7 @@
         <td><label><input type="checkbox" id="p1zm2sat"> 2 zm</label></td>
         <td><label><input type="checkbox" id="p1zm1sun"> 1 zm</label></td>
         <td><label><input type="checkbox" id="p1zm2sun"> 2 zm</label></td>
+        <td><label><input type="checkbox" id="wholeDayP1"> zgoda</label></td>
     </tr>
     <tr>
         <td><input type='text' id="name2" placeholder='Imię pracownika'> <button class="full" id="full2">Full</button></td>
@@ -243,6 +245,7 @@
         <td><label><input type="checkbox" id="p2zm2sat"> 2 zm</label></td>
         <td><label><input type="checkbox" id="p2zm1sun"> 1 zm</label></td>
         <td><label><input type="checkbox" id="p2zm2sun"> 2 zm</label></td>
+        <td><label><input type="checkbox" id="wholeDayP2"> zgoda</label></td>
     </tr>
     <tr>
         <td><input type='text' id="name3" placeholder='Imię pracownika'> <button class="full" id="full3">Full</button></td>
@@ -260,6 +263,7 @@
         <td><label><input type="checkbox" id="p3zm2sat"> 2 zm</label></td>
         <td><label><input type="checkbox" id="p3zm1sun"> 1 zm</label></td>
         <td><label><input type="checkbox" id="p3zm2sun"> 2 zm</label></td>
+        <td><label><input type="checkbox" id="wholeDayP3"> zgoda</label></td>
     </tr>
     <tr>
         <td><input type='text' id="name4" placeholder='Imię pracownika'> <button class="full" id="full4">Full</button></td>
@@ -277,6 +281,7 @@
         <td><label><input type="checkbox" id="p4zm2sat"> 2 zm</label></td>
         <td><label><input type="checkbox" id="p4zm1sun"> 1 zm</label></td>
         <td><label><input type="checkbox" id="p4zm2sun"> 2 zm</label></td>
+        <td><label><input type="checkbox" id="wholeDayP4"> zgoda</label></td>
     </tr>
     <tr>
         <td><input type='text' id="name5" placeholder='Imię pracownika'>  <button class="full" id="full5">Full</button></td>
@@ -294,6 +299,7 @@
         <td><label><input type="checkbox" id="p5zm2sat"> 2 zm</label></td>
         <td><label><input type="checkbox" id="p5zm1sun"> 1 zm</label></td>
         <td><label><input type="checkbox" id="p5zm2sun"> 2 zm</label></td>
+        <td><label><input type="checkbox" id="wholeDayP5"> zgoda</label></td>
     </tr>
     <tr>
         <td><input type='text' id="name6" placeholder='Imię pracownika'> <button class="full" id="full6">Full</button></td>
@@ -311,6 +317,7 @@
         <td><label><input type="checkbox" id="p6zm2sat"> 2 zm</label></td>
         <td><label><input type="checkbox" id="p6zm1sun"> 1 zm</label></td>
         <td><label><input type="checkbox" id="p6zm2sun"> 2 zm</label></td>
+        <td><label><input type="checkbox" id="wholeDayP6"> zgoda</label></td>
     </tr>
     <tr>
         <td><input type='text' id="name7" placeholder='Imię pracownika'>  <button class="full" id="full7">Full</button></td>
@@ -328,6 +335,7 @@
         <td><label><input type="checkbox" id="p7zm2sat"> 2 zm</label></td>
         <td><label><input type="checkbox" id="p7zm1sun"> 1 zm</label></td>
         <td><label><input type="checkbox" id="p7zm2sun"> 2 zm</label></td>
+        <td><label><input type="checkbox" id="wholeDayP7"> zgoda</label></td>
     </tr>
     <tr>
         <td><input type='text' id="name8" placeholder='Imię pracownika'> <button class="full" id="full8">Full</button></td>
@@ -345,6 +353,7 @@
         <td><label><input type="checkbox" id="p8zm2sat"> 2 zm</label></td>
         <td><label><input type="checkbox" id="p8zm1sun"> 1 zm</label></td>
         <td><label><input type="checkbox" id="p8zm2sun"> 2 zm</label></td>
+        <td><label><input type="checkbox" id="wholeDayP8"> zgoda</label></td>
     </tr>
     <tr>
         <td><input type='text' id="name9" placeholder='Imię pracownika'> <button class="full" id="full9">Full</button></td>
@@ -362,6 +371,7 @@
         <td><label><input type="checkbox" id="p9zm2sat"> 2 zm</label></td>
         <td><label><input type="checkbox" id="p9zm1sun"> 1 zm</label></td>
         <td><label><input type="checkbox" id="p9zm2sun"> 2 zm</label></td>
+        <td><label><input type="checkbox" id="wholeDayP9"> zgoda</label></td>
     </tr>
     <tr>
         <td><input type='text' id="name10" placeholder='Imię pracownika'> <button class="full" id="full10">Full</button></td>
@@ -379,6 +389,7 @@
         <td><label><input type="checkbox" id="p10zm2sat"> 2 zm</label></td>
         <td><label><input type="checkbox" id="p10zm1sun"> 1 zm</label></td>
         <td><label><input type="checkbox" id="p10zm2sun"> 2 zm</label></td>
+        <td><label><input type="checkbox" id="wholeDayP10"> zgoda</label></td>
     </tr>
     <tr>
         <td><input type='text' id="name11" placeholder='Imię pracownika'> <button class="full" id="full11">Full</button></td>
@@ -396,6 +407,7 @@
         <td><label><input type="checkbox" id="p11zm2sat"> 2 zm</label></td>
         <td><label><input type="checkbox" id="p11zm1sun"> 1 zm</label></td>
         <td><label><input type="checkbox" id="p11zm2sun"> 2 zm</label></td>
+        <td><label><input type="checkbox" id="wholeDayP11"> zgoda</label></td>
     </tr>
     <tr>
         <td><input type='text' id="name12" placeholder='Imię pracownika'> <button class="full" id="full12">Full</button></td>
@@ -413,6 +425,7 @@
         <td><label><input type="checkbox" id="p12zm2sat"> 2 zm</label></td>
         <td><label><input type="checkbox" id="p12zm1sun"> 1 zm</label></td>
         <td><label><input type="checkbox" id="p12zm2sun"> 2 zm</label></td>
+        <td><label><input type="checkbox" id="wholeDayP12"> zgoda</label></td>
     </tr>
   </table>
 </div>
