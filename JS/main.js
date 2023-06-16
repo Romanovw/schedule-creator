@@ -1449,44 +1449,44 @@ generate.addEventListener('click', function() {
   //Launching the search function for the maximum number of filled cells
   findMaxFilledCells();
   countOfShifts ();
-  function setQuantityShifts (){
-  let count111 = 0;
-  while (
-    parseInt(countSh1.textContent) < parseInt(from1.textContent) ||
-    parseInt(countSh1.textContent) > parseInt(to1.textContent) ||
-    parseInt(countSh2.textContent) < parseInt(from2.textContent) ||
-    parseInt(countSh2.textContent) > parseInt(to2.textContent) ||
-    parseInt(countSh3.textContent) < parseInt(from3.textContent) ||
-    parseInt(countSh3.textContent) > parseInt(to3.textContent) ||
-    parseInt(countSh4.textContent) < parseInt(from4.textContent) ||
-    parseInt(countSh4.textContent) > parseInt(to4.textContent) ||
-    parseInt(countSh5.textContent) < parseInt(from5.textContent) ||
-    parseInt(countSh5.textContent) > parseInt(to5.textContent) ||
-    parseInt(countSh6.textContent) < parseInt(from6.textContent) ||
-    parseInt(countSh6.textContent) > parseInt(to6.textContent) ||
-    parseInt(countSh7.textContent) < parseInt(from7.textContent) ||
-    parseInt(countSh7.textContent) > parseInt(to7.textContent) ||
-    parseInt(countSh8.textContent) < parseInt(from8.textContent) ||
-    parseInt(countSh8.textContent) > parseInt(to8.textContent) ||
-    parseInt(countSh9.textContent) < parseInt(from9.textContent) ||
-    parseInt(countSh9.textContent) > parseInt(to9.textContent) ||
-    parseInt(countSh10.textContent) < parseInt(from10.textContent) ||
-    parseInt(countSh10.textContent) > parseInt(to10.textContent) ||
-    parseInt(countSh11.textContent) < parseInt(from11.textContent) ||
-    parseInt(countSh11.textContent) > parseInt(to11.textContent) ||
-    parseInt(countSh12.textContent) < parseInt(from12.textContent) ||
-    parseInt(countSh12.textContent) > parseInt(to12.textContent)
-  ) {
-    generateSchedule();
-    countOfShifts();
-    count111++;
+//   function setQuantityShifts (){
+//   let count111 = 0;
+//   while (
+//     parseInt(countSh1.textContent) < parseInt(from1.textContent) ||
+//     parseInt(countSh1.textContent) > parseInt(to1.textContent) ||
+//     parseInt(countSh2.textContent) < parseInt(from2.textContent) ||
+//     parseInt(countSh2.textContent) > parseInt(to2.textContent) ||
+//     parseInt(countSh3.textContent) < parseInt(from3.textContent) ||
+//     parseInt(countSh3.textContent) > parseInt(to3.textContent) ||
+//     parseInt(countSh4.textContent) < parseInt(from4.textContent) ||
+//     parseInt(countSh4.textContent) > parseInt(to4.textContent) ||
+//     parseInt(countSh5.textContent) < parseInt(from5.textContent) ||
+//     parseInt(countSh5.textContent) > parseInt(to5.textContent) ||
+//     parseInt(countSh6.textContent) < parseInt(from6.textContent) ||
+//     parseInt(countSh6.textContent) > parseInt(to6.textContent) ||
+//     parseInt(countSh7.textContent) < parseInt(from7.textContent) ||
+//     parseInt(countSh7.textContent) > parseInt(to7.textContent) ||
+//     parseInt(countSh8.textContent) < parseInt(from8.textContent) ||
+//     parseInt(countSh8.textContent) > parseInt(to8.textContent) ||
+//     parseInt(countSh9.textContent) < parseInt(from9.textContent) ||
+//     parseInt(countSh9.textContent) > parseInt(to9.textContent) ||
+//     parseInt(countSh10.textContent) < parseInt(from10.textContent) ||
+//     parseInt(countSh10.textContent) > parseInt(to10.textContent) ||
+//     parseInt(countSh11.textContent) < parseInt(from11.textContent) ||
+//     parseInt(countSh11.textContent) > parseInt(to11.textContent) ||
+//     parseInt(countSh12.textContent) < parseInt(from12.textContent) ||
+//     parseInt(countSh12.textContent) > parseInt(to12.textContent)
+//   ) {
+//     generateSchedule();
+//     countOfShifts();
+//     count111++;
   
-    if (count111 >= 2000) {
-      break;
-    }
-  }
-}
-setQuantityShifts ();
+//     if (count111 >= 2000) {
+//       break;
+//     }
+//   }
+// }
+// setQuantityShifts ();
   });
 
 const changeMon1 = document.getElementById ('changeMon1');

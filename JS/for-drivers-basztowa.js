@@ -529,6 +529,7 @@ nameAuto.addEventListener('click', function(){
     name4.value = 'Valentyn';
     name5.value = 'Vasyl';
     name6.value = 'Władek';
+    name7.value = 'Dima';
 });
 
 // Generating a random element
@@ -602,6 +603,232 @@ let randomIndexMon11, randomIndexMon12,
             }
         }
          };
+//consent to work in 2 shifts
+const wholeDayP1 = document.getElementById ('wholeDayP1');
+const wholeDayP2 = document.getElementById ('wholeDayP2');
+const wholeDayP3 = document.getElementById ('wholeDayP3');
+const wholeDayP4 = document.getElementById ('wholeDayP4');
+const wholeDayP5 = document.getElementById ('wholeDayP5');
+const wholeDayP6 = document.getElementById ('wholeDayP6');
+const wholeDayP7 = document.getElementById ('wholeDayP7');
+const wholeDayP8 = document.getElementById ('wholeDayP8');
+const wholeDayP9 = document.getElementById ('wholeDayP9');
+const wholeDayP10 = document.getElementById ('wholeDayP10');
+const wholeDayP11 = document.getElementById ('wholeDayP11');
+const wholeDayP12 = document.getElementById ('wholeDayP12');
+let agreeP1 = false;
+let agreeP2 = false;
+let agreeP3 = false;
+let agreeP4 = false;
+let agreeP5 = false;
+let agreeP6 = false;
+let agreeP7 = false;
+let agreeP8 = false;
+let agreeP9 = false;
+let agreeP10 = false;
+let agreeP11 = false;
+let agreeP12 = false;
+
+wholeDayP1.addEventListener('change', function() {
+  if (this.checked) {
+    agreeP1 = true;
+  } else {
+    agreeP1 = false;
+  }
+});
+
+wholeDayP2.addEventListener('change', function() {
+  if (this.checked) {
+    agreeP2 = true;
+  } else {
+    agreeP2 = false;
+  }
+});
+
+wholeDayP3.addEventListener('change', function() {
+  if (this.checked) {
+    agreeP3 = true;
+  } else {
+    agreeP3 = false;
+  }
+});
+
+wholeDayP3.addEventListener('change', function() {
+  if (this.checked) {
+    agreeP3 = true;
+  } else {
+    agreeP3 = false;
+  }
+});
+
+wholeDayP4.addEventListener('change', function() {
+  if (this.checked) {
+    agreeP4 = true;
+  } else {
+    agreeP4 = false;
+  }
+});
+
+wholeDayP5.addEventListener('change', function() {
+  if (this.checked) {
+    agreeP5 = true;
+  } else {
+    agreeP5 = false;
+  }
+});
+
+wholeDayP6.addEventListener('change', function() {
+  if (this.checked) {
+    agreeP6 = true;
+  } else {
+    agreeP6 = false;
+  }
+});
+
+wholeDayP7.addEventListener('change', function() {
+  if (this.checked) {
+    agreeP7 = true;
+  } else {
+    agreeP7 = false;
+  }
+});
+
+wholeDayP8.addEventListener('change', function() {
+  if (this.checked) {
+    agreeP8 = true;
+  } else {
+    agreeP8 = false;
+  }
+});
+
+wholeDayP9.addEventListener('change', function() {
+  if (this.checked) {
+    agreeP9 = true;
+  } else {
+    agreeP9 = false;
+  }
+});
+
+wholeDayP10.addEventListener('change', function() {
+  if (this.checked) {
+    agreeP10 = true;
+  } else {
+    agreeP10 = false;
+  }
+});
+
+wholeDayP11.addEventListener('change', function() {
+  if (this.checked) {
+    agreeP11 = true;
+  } else {
+    agreeP11 = false;
+  }
+});
+
+wholeDayP12.addEventListener('change', function() {
+  if (this.checked) {
+    agreeP12 = true;
+  } else {
+    agreeP12 = false;
+  }
+});
+
+function withoutWholeDay(name, shift1p1, shift1p2, shift2p1, shift2p2) {
+
+function first (){
+if (
+  (name.value === shift2p1.textContent && name.value === shift1p1.textContent) ||
+  (name.value === shift2p2.textContent && name.value === shift1p1.textContent)
+) {
+  if (shift1p1.style.color !== 'red') {
+    shift1p1.textContent = '';
+  }
+}
+if (
+  (name.value === shift2p1.textContent && name.value === shift1p2.textContent) ||
+  (name.value === shift2p2.textContent && name.value === shift1p2.textContent)
+) {
+  if (shift1p2.style.color !== 'red') {
+    shift1p2.textContent = '';
+  }
+}
+}
+
+function second (){
+      if (
+        (name.value === shift1p1.textContent && name.value === shift2p1.textContent) ||
+        (name.value === shift1p2.textContent && name.value === shift2p1.textContent)
+      ) {
+        if (shift2p1.style.color !== 'red') {
+          shift2p1.textContent = '';
+        }
+      }
+      if (
+        (name.value === shift1p1.textContent && name.value === shift2p2.textContent) ||
+        (name.value === shift1p2.textContent && name.value === shift2p2.textContent)
+      ) {
+        if (shift2p2.style.color !== 'red') {
+          shift2p2.textContent = '';
+        }
+      }
+    }
+//randomly launch one of the functions so that one shift does not always fall out
+let randomNumber = Math.random();
+if (randomNumber < 0.5) {
+  first();
+} else {
+  second();
+}
+     
+if (shift1p1.style.color === 'red' || shift1p2.style.color === 'red' || 
+    shift2p1.style.color === 'red' || shift2p2.style.color === 'red'){      
+  
+          
+              if (name.value === shift1p1.textContent && name.value === shift2p1.textContent){
+                if(shift1p1.style.color !== 'red'){
+                  shift1p1.textContent = '';
+                }
+                else{ if (shift2p1.style.color !== 'red'){
+                  shift2p1.textContent = '';
+                }
+              }
+            }
+            else {};
+            
+            if (name.value === shift1p1.textContent && name.value === shift2p2.textContent){
+              if(shift1p1.style.color !== 'red'){
+                shift1p1.textContent = '';
+              }
+              else{ if (shift2p2.style.color !== 'red'){
+                shift2p2.textContent = '';
+              }
+            }
+          }
+          else {};
+
+        if (name.value === shift1p2.textContent && name.value === shift2p1.textContent){
+          if(shift1p2.style.color !== 'red'){
+            shift1p2.textContent = '';
+          }
+          else{ if (shift2p1.style.color !== 'red'){
+            shift2p1.textContent = '';
+          }
+        }
+      }
+      else {};
+
+      if (name.value === shift1p2.textContent && name.value === shift2p2.textContent){
+        if(shift1p2.style.color !== 'red'){
+          shift1p2.textContent = '';
+        }
+        else{ if (shift2p2.style.color !== 'red'){
+          shift2p2.textContent = '';
+        }
+      }
+    }
+    else {};              
+}
+}
          
 // Table with shift counter
 const schedule = document.getElementById ('schedule');
@@ -630,8 +857,7 @@ const per9 = document.getElementById('per9');
 const per10 = document.getElementById('per10');
 const per11 = document.getElementById('per11');
 const per12 = document.getElementById('per12');
-         
-         
+                
 //shift counter
 function countOfShifts (){
 function persons (per, name){
@@ -652,11 +878,11 @@ persons (per12, name12);
        
 function countShifts(name, countSh) {
     let count = 0;
-    const searchValue = name.value.toLowerCase(); // Приводим искомое значение к нижнему регистру для сравнения
+    const searchValue = name.value.toLowerCase(); // Bring the desired value to lower case for comparison
   
     for (let i = 0, row; (row = schedule.rows[i]); i++) {
       for (let j = 0, cell; (cell = row.cells[j]); j++) {
-        const cellValue = cell.textContent.toLowerCase(); // Приводим значение ячейки к нижнему регистру для сравнения
+        const cellValue = cell.textContent.toLowerCase(); // Convert cell value to lowercase for comparison
         if (cellValue.includes(searchValue)) {
           count++;
         }
@@ -681,43 +907,80 @@ countShifts (name11, countSh11);
 countShifts (name12, countSh12);
 };  
 const tableCells = schedule.querySelectorAll('td');
+//Add an input event handler for each cell
 tableCells.forEach(function(cell) {
   cell.addEventListener('input', function() {
     countOfShifts();
   });
 });
-sellsMenuForDay (mon11, mon12, mon13, allForMon1);
-sellsMenuForDay (mon21, mon22, mon23, allForMon2);
-sellsMenuForDay (tue11, tue12, tue13, allForTue1);
-sellsMenuForDay (tue21, tue22, tue23, allForTue2);
-sellsMenuForDay (wed11, wed12, wed13, allForWed1);
-sellsMenuForDay (wed21, wed22, wed23, allForWed2);
-sellsMenuForDay (thu11, thu12, thu13, allForThu1);
-sellsMenuForDay (thu21, thu22, thu23, allForThu2);
-sellsMenuForDay (fri11, fri12, fri13, allForFri1);
-sellsMenuForDay (fri21, fri22, fri23, allForFri2);
-sellsMenuForDay (sat11, sat12, sat13, allForSat1);
-sellsMenuForDay (sat21, sat22, sat23, allForSat2);
-sellsMenuForDay (sun11, sun12, sun13, allForSun1);
-sellsMenuForDay (sun21, sun22, sun23, allForSun2);
+//a function that excludes the same name on the second shift of the previous day and the first of the next
+function notRepeat (previousDay21, previousDay22, nextDay11, nextDay12,
+  randomIndexNextDay11, randomIndexNextDay12, allForNextDay1, 
+          randomElementNextDay11, randomElementNextDay12, randomIndexPreviousDay21, randomIndexPreviousDay22, allForPreviousDay2, 
+          randomElementPreviousDay21, randomElementPreviousDay22,) 
+          {
+  let count = 0; 
+  while (previousDay21.textContent === nextDay11.textContent || previousDay21.textContent === nextDay12.textContent ||
+       previousDay22.textContent === nextDay11.textContent || previousDay22.textContent === nextDay12.textContent)
+       {generateForAllDays (randomIndexNextDay11, randomIndexNextDay12, allForNextDay1, 
+          randomElementNextDay11, randomElementNextDay12, 
+          nextDay11, nextDay12,);
 
-const wholeDayP1 = document.getElementById ('wholeDayP1');
-const wholeDayP2 = document.getElementById ('wholeDayP2');
-const wholeDayP3 = document.getElementById ('wholeDayP3');
-const wholeDayP4 = document.getElementById ('wholeDayP4');
-const wholeDayP5 = document.getElementById ('wholeDayP5');
-const wholeDayP6 = document.getElementById ('wholeDayP6');
-const wholeDayP7 = document.getElementById ('wholeDayP7');
-const wholeDayP8 = document.getElementById ('wholeDayP8');
-const wholeDayP9 = document.getElementById ('wholeDayP9');
-const wholeDayP10 = document.getElementById ('wholeDayP10');
-const wholeDayP11 = document.getElementById ('wholeDayP11');
-const wholeDayP12 = document.getElementById ('wholeDayP12');
+      count++;
+      if (count >= 1000){
+          if (nextDay11.textContent === previousDay21.textContent || nextDay11.textContent === previousDay22.textContent) {
+              if (nextDay11.style.color === 'red'){
+              }
+              else {
+              nextDay11.textContent = '';
+              }
+          }
+          if (previousDay21.textContent === nextDay12.textContent || previousDay22.textContent === nextDay12.textContent) {
+              if (nextDay12.style.color === 'red'){
 
+              }
+              else {
+              nextDay12.textContent = '';
+              }
+          }
+          break;
+      }
+      }
+
+      if (nextDay11.style.color === 'red' || nextDay12.style.color === 'red'){      
+      let count1 = 0; 
+      while (previousDay21.textContent === nextDay11.textContent || previousDay21.textContent === nextDay12.textContent ||
+       previousDay22.textContent === nextDay11.textContent || previousDay22.textContent === nextDay12.textContent) {
+          generateForAllDays (randomIndexPreviousDay21, randomIndexPreviousDay22, allForPreviousDay2, 
+              randomElementPreviousDay21, randomElementPreviousDay22, 
+              previousDay21, previousDay22);   
+              count1++;
+              if (count1 >= 1000){
+                  if (nextDay11.textContent === previousDay21.textContent || nextDay12.textContent === previousDay21.textContent) {
+                      if (previousDay21.style.color === 'red'){
+                      }
+                      else {
+                      previousDay21.textContent = '';
+                      }
+                  }
+                  if (previousDay22.textContent === nextDay11.textContent || previousDay22.textContent === nextDay12.textContent) {
+                      if (previousDay22.style.color === 'red'){
+
+                      }
+                      else {
+                      previousDay22.textContent = '';
+                      }
+                  }
+                  break;
+              }
+          }
+       }
+};
 
 // Button that launches all generation fields
 let generate = document.getElementById('generate');
 generate.addEventListener('click', function() {
+function generateSchedule (){
     deleteAll (mon11);
     deleteAll (mon12);
     deleteAll (mon13);
@@ -766,69 +1029,7 @@ generate.addEventListener('click', function() {
     deleteAll (sun21);
     deleteAll (sun22);
     deleteAll (sun23);
-    //a function that excludes the same name on the second shift of the previous day and the first of the next
-    function notRepeat (previousDay21, previousDay22, nextDay11, nextDay12,
-            randomIndexNextDay11, randomIndexNextDay12, allForNextDay1, 
-                    randomElementNextDay11, randomElementNextDay12, randomIndexPreviousDay21, randomIndexPreviousDay22, allForPreviousDay2, 
-                    randomElementPreviousDay21, randomElementPreviousDay22,) 
-                    {
-            let count = 0; 
-            while (previousDay21.textContent === nextDay11.textContent || previousDay21.textContent === nextDay12.textContent ||
-                 previousDay22.textContent === nextDay11.textContent || previousDay22.textContent === nextDay12.textContent)
-                 {generateForAllDays (randomIndexNextDay11, randomIndexNextDay12, allForNextDay1, 
-                    randomElementNextDay11, randomElementNextDay12, 
-                    nextDay11, nextDay12,);
-
-                count++;
-                if (count >= 1000){
-                    if (nextDay11.textContent === previousDay21.textContent || nextDay11.textContent === previousDay22.textContent) {
-                        if (nextDay11.style.color === 'red'){
-                        }
-                        else {
-                        nextDay11.textContent = '';
-                        }
-                    }
-                    if (previousDay21.textContent === nextDay12.textContent || previousDay22.textContent === nextDay12.textContent) {
-                        if (nextDay12.style.color === 'red'){
-
-                        }
-                        else {
-                        nextDay12.textContent = '';
-                        }
-                    }
-                    break;
-                }
-                }
-
-                if (nextDay11.style.color === 'red' || nextDay12.style.color === 'red'){      
-                let count1 = 0; 
-                while (previousDay21.textContent === nextDay11.textContent || previousDay21.textContent === nextDay12.textContent ||
-                 previousDay22.textContent === nextDay11.textContent || previousDay22.textContent === nextDay12.textContent) {
-                    generateForAllDays (randomIndexPreviousDay21, randomIndexPreviousDay22, allForPreviousDay2, 
-                        randomElementPreviousDay21, randomElementPreviousDay22, 
-                        previousDay21, previousDay22);   
-                        count1++;
-                        if (count1 >= 1000){
-                            if (nextDay11.textContent === previousDay21.textContent || nextDay12.textContent === previousDay21.textContent) {
-                                if (previousDay21.style.color === 'red'){
-                                }
-                                else {
-                                previousDay21.textContent = '';
-                                }
-                            }
-                            if (previousDay22.textContent === nextDay11.textContent || previousDay22.textContent === nextDay12.textContent) {
-                                if (previousDay22.style.color === 'red'){
-
-                                }
-                                else {
-                                previousDay22.textContent = '';
-                                }
-                            }
-                            break;
-                        }
-                        }
-                        }
-         };
+    
 
     generateForAllDays (randomIndexMon11, randomIndexMon12, allForMon1, 
                             randomElementMon11, randomElementMon12, 
@@ -910,8 +1111,200 @@ generate.addEventListener('click', function() {
     generateForAllDays (randomIndexSun21, randomIndexSun22, allForSun2, 
                             randomElementSun21, randomElementSun22, 
                             sun21, sun22);
-    countOfShifts ();
+      if(!agreeP1){
+      withoutWholeDay (name1, mon11, mon12, mon21, mon22);
+      withoutWholeDay (name1, tue11, tue12, tue21, tue22);
+      withoutWholeDay (name1, wed11, wed12, wed21, wed22);
+      withoutWholeDay (name1, thu11, thu12, thu21, thu22);
+      withoutWholeDay (name1, fri11, fri12, fri21, fri22);
+      withoutWholeDay (name1, sat11, sat12, sat21, sat22);
+      withoutWholeDay (name1, sun11, sun12, sun21, sun22);
+      }
 
+      if(!agreeP2){
+      withoutWholeDay (name2, mon11, mon12, mon21, mon22);
+      withoutWholeDay (name2, tue11, tue12, tue21, tue22);
+      withoutWholeDay (name2, wed11, wed12, wed21, wed22);
+      withoutWholeDay (name2, thu11, thu12, thu21, thu22);
+      withoutWholeDay (name2, fri11, fri12, fri21, fri22);
+      withoutWholeDay (name2, sat11, sat12, sat21, sat22);
+      withoutWholeDay (name2, sun11, sun12, sun21, sun22);
+      }
+
+      if(!agreeP3){
+      withoutWholeDay (name3, mon11, mon12, mon21, mon22);
+      withoutWholeDay (name3, tue11, tue12, tue21, tue22);
+      withoutWholeDay (name3, wed11, wed12, wed21, wed22);
+      withoutWholeDay (name3, thu11, thu12, thu21, thu22);
+      withoutWholeDay (name3, fri11, fri12, fri21, fri22);
+      withoutWholeDay (name3, sat11, sat12, sat21, sat22);
+      withoutWholeDay (name3, sun11, sun12, sun21, sun22);
+        }
+      if(!agreeP4){
+      withoutWholeDay (name4, mon11, mon12, mon21, mon22);
+      withoutWholeDay (name4, tue11, tue12, tue21, tue22);
+      withoutWholeDay (name4, wed11, wed12, wed21, wed22);
+      withoutWholeDay (name4, thu11, thu12, thu21, thu22);
+      withoutWholeDay (name4, fri11, fri12, fri21, fri22);
+      withoutWholeDay (name4, sat11, sat12, sat21, sat22);
+      withoutWholeDay (name4, sun11, sun12, sun21, sun22);
+      }
+
+      if(!agreeP5){
+      withoutWholeDay (name5, mon11, mon12, mon21, mon22);
+      withoutWholeDay (name5, tue11, tue12, tue21, tue22);
+      withoutWholeDay (name5, wed11, wed12, wed21, wed22);
+      withoutWholeDay (name5, thu11, thu12, thu21, thu22);
+      withoutWholeDay (name5, fri11, fri12, fri21, fri22);
+      withoutWholeDay (name5, sat11, sat12, sat21, sat22);
+      withoutWholeDay (name5, sun11, sun12, sun21, sun22);
+      }
+      if(!agreeP6){
+      withoutWholeDay (name6, mon11, mon12, mon21, mon22);
+      withoutWholeDay (name6, tue11, tue12, tue21, tue22);
+      withoutWholeDay (name6, wed11, wed12, wed21, wed22);
+      withoutWholeDay (name6, thu11, thu12, thu21, thu22);
+      withoutWholeDay (name6, fri11, fri12, fri21, fri22);
+      withoutWholeDay (name6, sat11, sat12, sat21, sat22);
+      withoutWholeDay (name6, sun11, sun12, sun21, sun22);
+      }
+
+      if(!agreeP7){
+      withoutWholeDay (name7, mon11, mon12, mon21, mon22);
+      withoutWholeDay (name7, tue11, tue12, tue21, tue22);
+      withoutWholeDay (name7, wed11, wed12, wed21, wed22);
+      withoutWholeDay (name7, thu11, thu12, thu21, thu22);
+      withoutWholeDay (name7, fri11, fri12, fri21, fri22);
+      withoutWholeDay (name7, sat11, sat12, sat21, sat22);
+      withoutWholeDay (name7, sun11, sun12, sun21, sun22);
+      }
+      if(!agreeP8){
+      withoutWholeDay (name8, mon11, mon12, mon21, mon22);
+      withoutWholeDay (name8, tue11, tue12, tue21, tue22);
+      withoutWholeDay (name8, wed11, wed12, wed21, wed22);
+      withoutWholeDay (name8, thu11, thu12, thu21, thu22);
+      withoutWholeDay (name8, fri11, fri12, fri21, fri22);
+      withoutWholeDay (name8, sat11, sat12, sat21, sat22);
+      withoutWholeDay (name8, sun11, sun12, sun21, sun22);
+      }
+      if(!agreeP9){
+      withoutWholeDay (name9, mon11, mon12, mon21, mon22);
+      withoutWholeDay (name9, tue11, tue12, tue21, tue22);
+      withoutWholeDay (name9, wed11, wed12, wed21, wed22);
+      withoutWholeDay (name9, thu11, thu12, thu21, thu22);
+      withoutWholeDay (name9, fri11, fri12, fri21, fri22);
+      withoutWholeDay (name9, sat11, sat12, sat21, sat22);
+      withoutWholeDay (name9, sun11, sun12, sun21, sun22);
+      }
+      if(!agreeP10){
+      withoutWholeDay (name10, mon11, mon12, mon21, mon22);
+      withoutWholeDay (name10, tue11, tue12, tue21, tue22);
+      withoutWholeDay (name10, wed11, wed12, wed21, wed22);
+      withoutWholeDay (name10, thu11, thu12, thu21, thu22);
+      withoutWholeDay (name10, fri11, fri12, fri21, fri22);
+      withoutWholeDay (name10, sat11, sat12, sat21, sat22);
+      withoutWholeDay (name10, sun11, sun12, sun21, sun22);
+      }
+      if(!agreeP11){
+      withoutWholeDay (name11, mon11, mon12, mon21, mon22);
+      withoutWholeDay (name11, tue11, tue12, tue21, tue22);
+      withoutWholeDay (name11, wed11, wed12, wed21, wed22);
+      withoutWholeDay (name11, thu11, thu12, thu21, thu22);
+      withoutWholeDay (name11, fri11, fri12, fri21, fri22);
+      withoutWholeDay (name11, sat11, sat12, sat21, sat22);
+      withoutWholeDay (name11, sun11, sun12, sun21, sun22);
+      }
+      if(!agreeP12){
+      withoutWholeDay (name12, mon11, mon12, mon21, mon22);
+      withoutWholeDay (name12, tue11, tue12, tue21, tue22);
+      withoutWholeDay (name12, wed11, wed12, wed21, wed22);
+      withoutWholeDay (name12, thu11, thu12, thu21, thu22);
+      withoutWholeDay (name12, fri11, fri12, fri21, fri22);
+      withoutWholeDay (name11, sat11, sat12, sat21, sat22);
+      withoutWholeDay (name11, sun11, sun12, sun21, sun22);
+      }
+  }
+//search for the maximum number of filled cells under given conditions
+  function findMaxFilledCells() {
+    const maxIterations = 50; 
+    let maxFilledCells = 0; 
+    let targetFilledCells = 0;
+  
+    // Run a loop to determine the maximum number of filled cells
+    for (let i = 0; i < maxIterations; i++) {
+      generateSchedule ();
+  
+      //Count the number of filled cells
+      const filledCells = document.querySelectorAll('#schedule td:not(:empty)');
+      const filledCount = filledCells.length;
+  
+      //Update the maximum number of populated cells if needed
+      if (filledCount > maxFilledCells) {
+        maxFilledCells = filledCount;
+        targetFilledCells = maxFilledCells; //Set target number of filled cells
+      }
+      
+    }
+  
+    let maxFilledCells1 = 0;
+    //Run the fillCellsRandomly function until the target value is reached
+    while (maxFilledCells1 < targetFilledCells) {
+      generateSchedule ();
+  
+      //Count the number of filled cells
+      const filledCells1 = document.querySelectorAll('#schedule td:not(:empty)');
+      const filledCount1 = filledCells1.length;
+  
+      //Update the maximum number of populated cells if needed
+      if (filledCount1 > maxFilledCells1) {
+        maxFilledCells1 = filledCount1;
+      }
+    }
+  
+    console.log('Максимальное число заполненных ячеек:', maxFilledCells);
+  }
+  
+  //Launching the search function for the maximum number of filled cells
+  findMaxFilledCells();
+  countOfShifts ();
+//   function setQuantityShifts (){
+//   let count111 = 0;
+//   while (
+//     parseInt(countSh1.textContent) < parseInt(from1.textContent) ||
+//     parseInt(countSh1.textContent) > parseInt(to1.textContent) ||
+//     parseInt(countSh2.textContent) < parseInt(from2.textContent) ||
+//     parseInt(countSh2.textContent) > parseInt(to2.textContent) ||
+//     parseInt(countSh3.textContent) < parseInt(from3.textContent) ||
+//     parseInt(countSh3.textContent) > parseInt(to3.textContent) ||
+//     parseInt(countSh4.textContent) < parseInt(from4.textContent) ||
+//     parseInt(countSh4.textContent) > parseInt(to4.textContent) ||
+//     parseInt(countSh5.textContent) < parseInt(from5.textContent) ||
+//     parseInt(countSh5.textContent) > parseInt(to5.textContent) ||
+//     parseInt(countSh6.textContent) < parseInt(from6.textContent) ||
+//     parseInt(countSh6.textContent) > parseInt(to6.textContent) ||
+//     parseInt(countSh7.textContent) < parseInt(from7.textContent) ||
+//     parseInt(countSh7.textContent) > parseInt(to7.textContent) ||
+//     parseInt(countSh8.textContent) < parseInt(from8.textContent) ||
+//     parseInt(countSh8.textContent) > parseInt(to8.textContent) ||
+//     parseInt(countSh9.textContent) < parseInt(from9.textContent) ||
+//     parseInt(countSh9.textContent) > parseInt(to9.textContent) ||
+//     parseInt(countSh10.textContent) < parseInt(from10.textContent) ||
+//     parseInt(countSh10.textContent) > parseInt(to10.textContent) ||
+//     parseInt(countSh11.textContent) < parseInt(from11.textContent) ||
+//     parseInt(countSh11.textContent) > parseInt(to11.textContent) ||
+//     parseInt(countSh12.textContent) < parseInt(from12.textContent) ||
+//     parseInt(countSh12.textContent) > parseInt(to12.textContent)
+//   ) {
+//     generateSchedule();
+//     countOfShifts();
+//     count111++;
+  
+//     if (count111 >= 2000) {
+//       break;
+//     }
+//   }
+// }
+// setQuantityShifts ();
                 });
 
 const changeMon1 = document.getElementById ('changeMon1');
@@ -1099,6 +1492,20 @@ sellsMenu (cell1, allFor);
 sellsMenu (cell2, allFor);
 sellsMenu (cell3, allFor);
 }
+sellsMenuForDay (mon11, mon12, mon13, allForMon1);
+sellsMenuForDay (mon21, mon22, mon23, allForMon2);
+sellsMenuForDay (tue11, tue12, tue13, allForTue1);
+sellsMenuForDay (tue21, tue22, tue23, allForTue2);
+sellsMenuForDay (wed11, wed12, wed13, allForWed1);
+sellsMenuForDay (wed21, wed22, wed23, allForWed2);
+sellsMenuForDay (thu11, thu12, thu13, allForThu1);
+sellsMenuForDay (thu21, thu22, thu23, allForThu2);
+sellsMenuForDay (fri11, fri12, fri13, allForFri1);
+sellsMenuForDay (fri21, fri22, fri23, allForFri2);
+sellsMenuForDay (sat11, sat12, sat13, allForSat1);
+sellsMenuForDay (sat21, sat22, sat23, allForSat2);
+sellsMenuForDay (sun11, sun12, sun13, allForSun1);
+sellsMenuForDay (sun21, sun22, sun23, allForSun2);
 
 let monday1 = document.getElementById ('monday1');
 let tuesday1 = document.getElementById ('tuesday1');
@@ -1145,6 +1552,7 @@ deleteButton.addEventListener('click', function() {
     deleteAll (mon11);
     deleteAll (mon12);
     deleteAll (mon13);
+    deleteAll (mon21);
     deleteAll (mon22);
     deleteAll (mon23);
     deleteAll (tue11);
@@ -1185,6 +1593,44 @@ deleteButton.addEventListener('click', function() {
     deleteAll (sun23);
     countOfShifts ();
     });
+    //event to duties button
+    const time = document.getElementById ('time');
+    let dutiesClicked = true;
+    function addDuties (person2){
+    if (dutiesClicked){
+      person2.textContent = person2.textContent + '  (12:00)';
+      }
+      else {
+          
+          let originalContent2 = person2.textContent;
+          let updatedContent2 = originalContent2.replace('  (12:00)', '');
+          person2.textContent = updatedContent2;
+
+      }
+  }
+
+  time.addEventListener ('click', function (){
+    if(dutiesClicked){
+    addDuties (mon12);
+    addDuties (tue12);
+    addDuties (wed12);
+    addDuties (thu12);
+    addDuties (fri12);
+    addDuties (sat12);
+    addDuties (sun12);
+    dutiesClicked = false;
+    }
+    else {
+    addDuties (mon12);
+    addDuties (tue12);
+    addDuties (wed12);
+    addDuties (thu12);
+    addDuties (fri12);
+    addDuties (sat12);
+    addDuties (sun12);
+    dutiesClicked = true;
+    }
+  });
 //save jpg
 const saveButton = document.getElementById('saveButton');
 const table = document.getElementById('schedule');
