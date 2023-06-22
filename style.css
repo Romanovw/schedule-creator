@@ -86,7 +86,7 @@ td.time {
   color: #333;
   font-size: 15px;
   padding: 2px;
-  width: 60px; 
+  width: 60px;
 }
 #countSh {
   border-collapse: collapse;
@@ -147,7 +147,7 @@ td.time {
 }
 .table-container2 {
   margin-left: 2%;
-  margin-right: 2%; 
+  margin-right: 2%;
   margin-top: 20px;
 }
 #availability {
@@ -223,7 +223,7 @@ td.time {
   box-sizing: border-box;
   text-align: left;
 }
-.full{
+.full {
   background-image: url("img/shuffle2.png");
   background-repeat: no-repeat;
   background-position: center;
@@ -237,7 +237,7 @@ td.time {
   background-color: transparent;
 }
 #availability input[type="text"]::placeholder {
-  text-indent: -15px; 
+  text-indent: -15px;
 }
 
 #availability td input[type="checkbox"] {
@@ -299,7 +299,7 @@ td.time {
   color: #666;
   border-radius: 4px;
   border: 1px solid #ccc;
-  z-index: 999
+  z-index: 999;
 }
 .dropdown-menu-item {
   padding: 8px 0;
@@ -339,7 +339,7 @@ td.time {
   background-color: #e4e9ed;
   transition: background-color 0.1s ease;
   font-weight: bold;
-  color: #4D4D4D;
+  color: #4d4d4d;
 }
 
 #generate:hover {
@@ -349,7 +349,8 @@ td.time {
   body * {
     visibility: hidden;
   }
-  #schedule, #schedule * {
+  #schedule,
+  #schedule * {
     visibility: visible;
   }
   #schedule {
@@ -359,13 +360,12 @@ td.time {
   }
 
   #schedule {
-  border-collapse: collapse;
-  width: 100%;
-  font-family: Arial, sans-serif;
-  margin-bottom: 30px;
-  margin-top: 20px;
-}
-  
+    border-collapse: collapse;
+    width: 100%;
+    font-family: Arial, sans-serif;
+    margin-bottom: 30px;
+    margin-top: 20px;
+  }
 
   #schedule caption {
     font-size: 1.2em;
@@ -400,7 +400,7 @@ td.time {
   @page :first {
     margin-top: 30;
   }
-  @page {
+   @page {
     header {
       display: none;
     }
@@ -411,7 +411,7 @@ td.time {
 }
 
 #printButton {
-background-image: url("img/printer.png");
+  background-image: url("img/printer.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -425,17 +425,17 @@ background-image: url("img/printer.png");
 }
 #saveButton {
   background-image: url("img/jpg-file.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain; /* или cover, в зависимости от предпочтений */
-    width: 40px;
-    height: 40px;
-    border: none;
-    cursor: pointer;
-    text-indent: -9999px; /* скрыть текст кнопки */
-    margin-left: 10px;
-    background-color: transparent;
-  }
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 40px;
+  height: 40px;
+  border: none;
+  cursor: pointer;
+  text-indent: -9999px;
+  margin-left: 10px;
+  background-color: transparent;
+}
 .header {
   background-color: #24292e;
   height: 60px;
@@ -500,11 +500,11 @@ background-image: url("img/printer.png");
   white-space: nowrap;
 }
 .container-footer {
-  display:flex;
+  display: flex;
   justify-content: space-between;
   white-space: nowrap;
 }
-.autor{
+.autor {
   font-size: 17px;
   color: #c7c7c7;
   margin-top: 15px;
@@ -520,7 +520,7 @@ background-image: url("img/printer.png");
 .footer a {
   color: #8e8e8e;
   text-decoration: none;
-  margin-right: 20px; 
+  margin-right: 20px;
   margin-left: 20px;
   display: block;
   margin-bottom: 3px;
@@ -548,7 +548,7 @@ background-image: url("img/printer.png");
   background-color: #e4e9ed;
   transition: background-color 0.1s ease;
   font-weight: bold;
-  color: #4D4D4D;
+  color: #4d4d4d;
 }
 
 #deleteButton:hover {
@@ -571,7 +571,7 @@ background-image: url("img/printer.png");
   background-color: #e4e9ed;
   transition: background-color 0.1s ease;
   font-weight: bold;
-  color: #4D4D4D;
+  color: #4d4d4d;
 }
 
 #duties:hover {
@@ -592,7 +592,7 @@ background-image: url("img/printer.png");
   background-color: #e4e9ed;
   transition: background-color 0.1s ease;
   font-weight: bold;
-  color: #4D4D4D;
+  color: #4d4d4d;
 }
 
 #time:hover {
