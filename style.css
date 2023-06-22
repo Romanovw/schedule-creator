@@ -1,6 +1,8 @@
 body {
   padding: 0;
   margin: 0;
+  max-width: 100%;
+  max-height: 100%;
 }
 .table-container {
   display: flex;
@@ -400,7 +402,7 @@ td.time {
   @page :first {
     margin-top: 30;
   }
-   @page {
+  @page {
     header {
       display: none;
     }
@@ -488,7 +490,7 @@ td.time {
   height: 55px;
   left: 0;
   width: 100%;
-  min-width: 1197px;
+  min-width: 100%;
   z-index: 9999;
   margin-top: 20px;
   padding: 0;
@@ -597,4 +599,15 @@ td.time {
 
 #time:hover {
   background-color: #d2d4dc;
+}
+
+@media (max-width: 1100px) {
+  .page {
+    padding: 0;
+    margin: 0;
+    max-width: 100%;
+    max-height: 100%;
+    overflow-x: auto; /* Показывает горизонтальную прокрутку на малых экранах */
+    zoom: 80%; /* Изменяет масштаб содержимого для подгонки в экран */
+  }
 }
