@@ -179,7 +179,7 @@ td.time {
   color: #333;
   text-transform: uppercase;
   font-size: 12px;
-  white-space:initial;
+  white-space:nowrap;
 }
 #availability td {
   border: 1px solid #c9c6c6;
@@ -275,6 +275,7 @@ td.time {
 #availability td input[type="checkbox"] + label:hover {
   text-decoration: underline;
 }
+
 
 .dropdown-cell {
   position: relative;
