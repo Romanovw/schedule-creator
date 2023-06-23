@@ -152,6 +152,8 @@ td.time {
   margin-left: 2%;
   margin-right: 2%;
   margin-top: 20px;
+  max-width:100%;
+  
 }
 #availability {
   border-collapse: collapse;
@@ -160,6 +162,7 @@ td.time {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   border-radius: 6px;
   width: 100%;
+  max-width: 100%;
 }
 #availability caption {
   font-size: 1em;
@@ -176,7 +179,7 @@ td.time {
   color: #333;
   text-transform: uppercase;
   font-size: 12px;
-  white-space: nowrap;
+  white-space:initial;
 }
 #availability td {
   border: 1px solid #c9c6c6;
@@ -186,7 +189,7 @@ td.time {
   color: #666;
   position: relative;
   transition: background-color 0.3s ease;
-  padding: 10px;
+  padding: 7px;
   white-space: nowrap;
 }
 #availability tr:nth-child(even) {
@@ -497,12 +500,14 @@ td.time {
   padding: 0;
   color: white;
   position: relative;
+  display: flex;
 }
 .footer-content {
   align-items: center;
   white-space: nowrap;
 }
 .container-footer {
+  width: 100%;
   display: flex;
   justify-content: space-between;
   white-space: nowrap;
