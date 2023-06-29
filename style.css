@@ -608,7 +608,7 @@ td.time {
   background-color: #d2d4dc;
 }
 
-@media (max-width: 1100px) {
+/* @media (max-width: 1100px) {
   body {
     padding: 0;
     margin: 0;
@@ -617,4 +617,4 @@ td.time {
     overflow-x: auto;
     zoom: 70%; 
   }
-}
+} */
