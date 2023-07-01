@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Grafik Basztowa</title>
   <link rel="stylesheet" type="text/css" href="style.css">
+  <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous"> -->
   <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
@@ -14,182 +15,185 @@
 </head>
 
 <body>
-  <header class="header">
-    <div class="container">
-      <div class="header-content">
-        <div class="logo">
+  <header class="navbar">
+    <div class="nav-content">
+      <div class="logo">
+        <a href="index.html">
           <img src="img/logo.png" alt="logo">
+        </a>
+      </div>
+      <div class="nav-drop">
+        <button class="nav-btn">&#9776;</button>
+        <div class="nav-list">
+          <a href="index.html">Kuchnia (Basztowa)</a>
+          <a id="active" href="drivers-basztowa.html">Kierowcy (Basztowa)</a>
+          <a href="kitchen-mackiewicza.html">Kuchnia (Mackiewicza)</a>
+          <a href="drivers-mackiewicza.html">Kierowcy (Mackiewicza)</a>
         </div>
-        <nav class="nav-links">
-          <ul>
-            <li><a href="index.html">Kuchnia (Basztowa)</a></li>
-            <li><a href="drivers-basztowa.html">Kierowcy (Basztowa)</a></li>
-            <li><a href="kitchen-mackiewicza.html">Kuchnia (Mackiewicza)</a></li>
-            <li><a href="drivers-mackiewicza.html">Kierowcy (Mackiewicza)</a></li>
-          </ul>
-        </nav>
       </div>
     </div>
   </header>
-  <div class="page">
-    <div class="table-container">
-      <table id="schedule">
-        <caption>Grafik od <input type='text' placeholder='dd/mm'> do <input type='text' placeholder='dd/mm'></caption>
-        <tr>
-          <th id="monday1" oninput="sameText(monday1, monday2)"><span contenteditable="true">Poniedziałek</span></th>
-          <th id="tuesday1" oninput="sameText(tuesday1, tuesday2)"><span contenteditable="true">Wtorek</span></th>
-          <th id="wednesday1" oninput="sameText(wednesday1, wednesday2)"><span contenteditable="true">Środa</span></th>
-          <th id="thursday1" oninput="sameText(thursday1, thursday2)"><span contenteditable="true">Czwartek</span></th>
-          <th id="friday1" oninput="sameText(friday1, friday2)"><span contenteditable="true">Piątek</span></th>
-          <th id="saturday1" oninput="sameText(saturday1, saturday2)"><span contenteditable="true">Sobota</span></th>
-          <th id="sunday1" oninput="sameText(sunday1, sunday2)"><span contenteditable="true">Niedziela</span></th>
-        </tr>
-        <tr>
-          <td class="time"><span contenteditable="true">10:30 - 18:00</span> <button id="changeMon1">@</button></td>
-          <td class="time"><span contenteditable="true">10:30 - 18:00</span> <button id="changeTue1">@</button></td>
-          <td class="time"><span contenteditable="true">10:30 - 18:00</span> <button id="changeWed1">@</button></td>
-          <td class="time"><span contenteditable="true">10:30 - 18:00</span> <button id="changeThu1">@</button></td>
-          <td class="time"><span contenteditable="true">10:30 - 18:00</span> <button id="changeFri1">@</button></td>
-          <td class="time"><span contenteditable="true">11:00 - 18:00</span> <button id="changeSat1">@</button></td>
-          <td class="time"><span contenteditable="true">11:00 - 18:00</span> <button id="changeSun1">@</button></td>
-        </tr>
-        <tr>
-          <td id="mon11" class="cell mon1" contenteditable="true"></td>
-          <td id="tue11" class="cell tue1" contenteditable="true"></td>
-          <td id="wed11" class="cell wed1" contenteditable="true"></td>
-          <td id="thu11" class="cell thu1" contenteditable="true"></td>
-          <td id="fri11" class="cell fri1" contenteditable="true"></td>
-          <td id="sat11" class="cell sat1" contenteditable="true"></td>
-          <td id="sun11" class="cell sun1" contenteditable="true"></td>
-        </tr>
-        <tr>
-          <td id="mon12" class="cell mon1" contenteditable="true"></td>
-          <td id="tue12" class="cell tue1" contenteditable="true"></td>
-          <td id="wed12" class="cell wed1" contenteditable="true"></td>
-          <td id="thu12" class="cell thu1" contenteditable="true"></td>
-          <td id="fri12" class="cell fri1" contenteditable="true"></td>
-          <td id="sat12" class="cell sat1" contenteditable="true"></td>
-          <td id="sun12" class="cell sun1" contenteditable="true"></td>
-        </tr>
-        <tr>
-          <td id="mon13" class="cell mon1" contenteditable="true"></td>
-          <td id="tue13" class="cell tue1" contenteditable="true"></td>
-          <td id="wed13" class="cell wed1" contenteditable="true"></td>
-          <td id="thu13" class="cell thu1" contenteditable="true"></td>
-          <td id="fri13" class="cell fri1" contenteditable="true"></td>
-          <td id="sat13" class="cell sat1" contenteditable="true"></td>
-          <td id="sun13" class="cell sun1" contenteditable="true"></td>
-        </tr>
-        <tr>
-          <td class="time"><span contenteditable="true">18:00 - 01:00</span> <button id="changeMon2">@</button></td>
-          <td class="time"><span contenteditable="true">18:00 - 01:00</span> <button id="changeTue2">@</button></td>
-          <td class="time"><span contenteditable="true">18:00 - 01:00</span> <button id="changeWed2">@</button></td>
-          <td class="time"><span contenteditable="true">18:00 - 01:00</span> <button id="changeThu2">@</button></td>
-          <td class="time"><span contenteditable="true">18:00 - 01:00</span> <button id="changeFri2">@</button></td>
-          <td class="time"><span contenteditable="true">18:00 - 01:00</span> <button id="changeSat2">@</button></td>
-          <td class="time"><span contenteditable="true">18:00 - 00:00</span> <button id="changeSun2">@</button></td>
-        </tr>
-        <tr>
-          <td id="mon21" class="cell mon2" contenteditable="true"></td>
-          <td id="tue21" class="cell tue2" contenteditable="true"></td>
-          <td id="wed21" class="cell wed2" contenteditable="true"></td>
-          <td id="thu21" class="cell thu2" contenteditable="true"></td>
-          <td id="fri21" class="cell fri2" contenteditable="true"></td>
-          <td id="sat21" class="cell sat2" contenteditable="true"></td>
-          <td id="sun21" class="cell sun2" contenteditable="true"></td>
-        </tr>
-        <tr>
-          <td id="mon22" class="cell mon2" contenteditable="true"></td>
-          <td id="tue22" class="cell tue2" contenteditable="true"></td>
-          <td id="wed22" class="cell wed2" contenteditable="true"></td>
-          <td id="thu22" class="cell thu2" contenteditable="true"></td>
-          <td id="fri22" class="cell fri2" contenteditable="true"></td>
-          <td id="sat22" class="cell sat2" contenteditable="true"></td>
-          <td id="sun22" class="cell sun2" contenteditable="true"></td>
-        </tr>
-        <tr>
-          <td id="mon23" class="cell mon2" contenteditable="true"></td>
-          <td id="tue23" class="cell tue2" contenteditable="true"></td>
-          <td id="wed23" class="cell wed2" contenteditable="true"></td>
-          <td id="thu23" class="cell thu2" contenteditable="true"></td>
-          <td id="fri23" class="cell fri2" contenteditable="true"></td>
-          <td id="sat23" class="cell sat2" contenteditable="true"></td>
-          <td id="sun23" class="cell sun2" contenteditable="true"></td>
-        </tr>
-      </table>
-  
-      <table id="countSh">
-        <tr>
-          <th>Pracownik</th>
-          <th>Ilość zmian</th>
-        </tr>
-        <tr>
-          <td id="per1"></td>
-          <td id="countSh1"></td>
-        </tr>
-        <tr>
-          <td id="per2"></td>
-          <td id="countSh2"></td>
-        </tr>
-        <tr>
-          <td id="per3"></td>
-          <td id="countSh3"></td>
-        </tr>
-        <tr>
-          <td id="per4"></td>
-          <td id="countSh4"></td>
-        </tr>
-        <tr>
-          <td id="per5"></td>
-          <td id="countSh5"></td>
-        </tr>
-        <tr>
-          <td id="per6"></td>
-          <td id="countSh6"></td>
-        </tr>
-        <tr>
-          <td id="per7"></td>
-          <td id="countSh7"></td>
-        </tr>
-        <tr>
-          <td id="per8"></td>
-          <td id="countSh8"></td>
-        </tr>
-        <tr>
-          <td id="per9"></td>
-          <td id="countSh9"></td>
-        </tr>
-        <tr>
-          <td id="per10"></td>
-          <td id="countSh10"></td>
-        </tr>
-        <tr>
-          <td id="per11"></td>
-          <td id="countSh11"></td>
-        </tr>
-        <tr>
-          <td id="per12"></td>
-          <td id="countSh12"></td>
-        </tr>
-        </tr>
-      </table>
-    </div>
-  
-    <!--menu-->
-    <div id="dropdown-menu" class="dropdown-menu"></div>
-    <div class="buttons">
-      <button id="generate">UTWÓRZ GRAFIK</button>
-      <button id="time">12:00</button>
-      <button id="deleteButton">USUŃ WSZYSTKO</button>
-      <button id="printButton">WYDRUK</button>
-      <button id="saveButton">SAVE</button>
-    </div>
-  
-    <div class="table-container2">
-      <table id="availability">
+  <div class="main-container">
+    <section>
+      <div class="table-container">
+        <table id="schedule" class="schedule">
+          <caption>Grafik od <input type='text' placeholder='dd/mm'> do <input type='text' placeholder='dd/mm'>
+          </caption>
+          <tr>
+            <th id="monday1" oninput="sameText(monday1, monday2)"><span contenteditable="true">Poniedziałek</span></th>
+            <th id="tuesday1" oninput="sameText(tuesday1, tuesday2)"><span contenteditable="true">Wtorek</span></th>
+            <th id="wednesday1" oninput="sameText(wednesday1, wednesday2)"><span contenteditable="true">Środa</span>
+            </th>
+            <th id="thursday1" oninput="sameText(thursday1, thursday2)"><span contenteditable="true">Czwartek</span>
+            </th>
+            <th id="friday1" oninput="sameText(friday1, friday2)"><span contenteditable="true">Piątek</span></th>
+            <th id="saturday1" oninput="sameText(saturday1, saturday2)"><span contenteditable="true">Sobota</span></th>
+            <th id="sunday1" oninput="sameText(sunday1, sunday2)"><span contenteditable="true">Niedziela</span></th>
+          </tr>
+          <tr>
+            <td class="time"><span contenteditable="true">8:00 - 17:00</span> <button id="changeMon1">@</button></td>
+            <td class="time"><span contenteditable="true">8:00 - 17:00</span> <button id="changeTue1">@</button></td>
+            <td class="time"><span contenteditable="true">8:00 - 17:00</span> <button id="changeWed1">@</button></td>
+            <td class="time"><span contenteditable="true">8:00 - 17:00</span> <button id="changeThu1">@</button></td>
+            <td class="time"><span contenteditable="true">8:00 - 17:00</span> <button id="changeFri1">@</button></td>
+            <td class="time"><span contenteditable="true">9:00 - 17:00</span> <button id="changeSat1">@</button></td>
+            <td class="time"><span contenteditable="true">9:00 - 17:00</span> <button id="changeSun1">@</button></td>
+          </tr>
+          <tr>
+            <td id="mon11" class="cell mon1" contenteditable="true"></td>
+            <td id="tue11" class="cell tue1" contenteditable="true"></td>
+            <td id="wed11" class="cell wed1" contenteditable="true"></td>
+            <td id="thu11" class="cell thu1" contenteditable="true"></td>
+            <td id="fri11" class="cell fri1" contenteditable="true"></td>
+            <td id="sat11" class="cell sat1" contenteditable="true"></td>
+            <td id="sun11" class="cell sun1" contenteditable="true"></td>
+          </tr>
+          <tr>
+            <td id="mon12" class="cell mon1" contenteditable="true"></td>
+            <td id="tue12" class="cell tue1" contenteditable="true"></td>
+            <td id="wed12" class="cell wed1" contenteditable="true"></td>
+            <td id="thu12" class="cell thu1" contenteditable="true"></td>
+            <td id="fri12" class="cell fri1" contenteditable="true"></td>
+            <td id="sat12" class="cell sat1" contenteditable="true"></td>
+            <td id="sun12" class="cell sun1" contenteditable="true"></td>
+          </tr>
+          <tr>
+            <td id="mon13" class="cell mon1" contenteditable="true"></td>
+            <td id="tue13" class="cell tue1" contenteditable="true"></td>
+            <td id="wed13" class="cell wed1" contenteditable="true"></td>
+            <td id="thu13" class="cell thu1" contenteditable="true"></td>
+            <td id="fri13" class="cell fri1" contenteditable="true"></td>
+            <td id="sat13" class="cell sat1" contenteditable="true"></td>
+            <td id="sun13" class="cell sun1" contenteditable="true"></td>
+          </tr>
+          <tr>
+            <td class="time"><span contenteditable="true">17:00 - 01:00</span> <button id="changeMon2">@</button></td>
+            <td class="time"><span contenteditable="true">17:00 - 01:00</span> <button id="changeTue2">@</button></td>
+            <td class="time"><span contenteditable="true">17:00 - 01:00</span> <button id="changeWed2">@</button></td>
+            <td class="time"><span contenteditable="true">17:00 - 01:00</span> <button id="changeThu2">@</button></td>
+            <td class="time"><span contenteditable="true">17:00 - 03:00</span> <button id="changeFri2">@</button></td>
+            <td class="time"><span contenteditable="true">17:00 - 03:00</span> <button id="changeSat2">@</button></td>
+            <td class="time"><span contenteditable="true">17:00 - 00:00</span> <button id="changeSun2">@</button></td>
+          </tr>
+          <tr>
+            <td id="mon21" class="cell mon2" contenteditable="true"></td>
+            <td id="tue21" class="cell tue2" contenteditable="true"></td>
+            <td id="wed21" class="cell wed2" contenteditable="true"></td>
+            <td id="thu21" class="cell thu2" contenteditable="true"></td>
+            <td id="fri21" class="cell fri2" contenteditable="true"></td>
+            <td id="sat21" class="cell sat2" contenteditable="true"></td>
+            <td id="sun21" class="cell sun2" contenteditable="true"></td>
+          </tr>
+          <tr>
+            <td id="mon22" class="cell mon2" contenteditable="true"></td>
+            <td id="tue22" class="cell tue2" contenteditable="true"></td>
+            <td id="wed22" class="cell wed2" contenteditable="true"></td>
+            <td id="thu22" class="cell thu2" contenteditable="true"></td>
+            <td id="fri22" class="cell fri2" contenteditable="true"></td>
+            <td id="sat22" class="cell sat2" contenteditable="true"></td>
+            <td id="sun22" class="cell sun2" contenteditable="true"></td>
+          </tr>
+          <tr>
+            <td id="mon23" class="cell mon2" contenteditable="true"></td>
+            <td id="tue23" class="cell tue2" contenteditable="true"></td>
+            <td id="wed23" class="cell wed2" contenteditable="true"></td>
+            <td id="thu23" class="cell thu2" contenteditable="true"></td>
+            <td id="fri23" class="cell fri2" contenteditable="true"></td>
+            <td id="sat23" class="cell sat2" contenteditable="true"></td>
+            <td id="sun23" class="cell sun2" contenteditable="true"></td>
+          </tr>
+        </table>
+
+        <!--menu-->
+        <div id="dropdown-menu" class="dropdown-menu"></div>
+
+        <table id="countSh" class="countSh">
+          <tr>
+            <th>Pracownik</th>
+            <th>Ilość zmian</th>
+          </tr>
+          <tr>
+            <td id="per1"></td>
+            <td id="countSh1"></td>
+          </tr>
+          <tr>
+            <td id="per2"></td>
+            <td id="countSh2"></td>
+          </tr>
+          <tr>
+            <td id="per3"></td>
+            <td id="countSh3"></td>
+          </tr>
+          <tr>
+            <td id="per4"></td>
+            <td id="countSh4"></td>
+          </tr>
+          <tr>
+            <td id="per5"></td>
+            <td id="countSh5"></td>
+          </tr>
+          <tr>
+            <td id="per6"></td>
+            <td id="countSh6"></td>
+          </tr>
+          <tr>
+            <td id="per7"></td>
+            <td id="countSh7"></td>
+          </tr>
+          <tr>
+            <td id="per8"></td>
+            <td id="countSh8"></td>
+          </tr>
+          <tr>
+            <td id="per9"></td>
+            <td id="countSh9"></td>
+          </tr>
+          <tr>
+            <td id="per10"></td>
+            <td id="countSh10"></td>
+          </tr>
+          <tr>
+            <td id="per11"></td>
+            <td id="countSh11"></td>
+          </tr>
+          <tr>
+            <td id="per12"></td>
+            <td id="countSh12"></td>
+          </tr>
+          </tr>
+        </table>
+      </div>
+      <div class="buttons">
+        <button id="generate" class="functional-btn">UTWÓRZ GRAFIK</button>
+        <button id="time" class="functional-btn">12:00</button>
+        <button id="deleteButton" class="functional-btn">USUŃ WSZYSTKO</button>
+        <button id="printButton">WYDRUK</button>
+        <button id="saveButton">SAVE</button>
+      </div>
+      <table id="availability" class="availability">
         <caption>Dyspozycja</caption>
         <tr>
-          <th>Pracownik <button id="nameAuto"> Wypełnić automatycznie</button> </th>
+          <th class="names">Pracownik <button id="nameAuto"> Wypełnić automatycznie</button> </th>
           <th id="monday2" colspan="2">Poniedziałek</th>
           <th id="tuesday2" colspan="2">Wtorek</th>
           <th id="wednesday2" colspan="2">Środa</th>
@@ -197,7 +201,7 @@
           <th id="friday2" colspan="2">Piątek</th>
           <th id="saturday2" colspan="2">Sobota</th>
           <th id="sunday2" colspan="2">Niedziela</th>
-          <th id="allDay">Zgoda na całość</th>
+          <th id="allDay" style="white-space: initial;">Zgoda na całość</th>
         </tr>
         <tr>
           <td><input type='text' id="name1" placeholder='Imię pracownika'> <button class="full" id="full1">Full</button>
@@ -371,7 +375,8 @@
           <td><label><input type="checkbox" id="wholeDayP9"> zgoda</label></td>
         </tr>
         <tr>
-          <td><input type='text' id="name10" placeholder='Imię pracownika'> <button class="full" id="full10">Full</button>
+          <td><input type='text' id="name10" placeholder='Imię pracownika'> <button class="full"
+              id="full10">Full</button>
           </td>
           <td><label><input type="checkbox" id="p10zm1mon"> 1 zm</label></td>
           <td><label><input type="checkbox" id="p10zm2mon"> 2 zm</label></td>
@@ -390,7 +395,8 @@
           <td><label><input type="checkbox" id="wholeDayP10"> zgoda</label></td>
         </tr>
         <tr>
-          <td><input type='text' id="name11" placeholder='Imię pracownika'> <button class="full" id="full11">Full</button>
+          <td><input type='text' id="name11" placeholder='Imię pracownika'> <button class="full"
+              id="full11">Full</button>
           </td>
           <td><label><input type="checkbox" id="p11zm1mon"> 1 zm</label></td>
           <td><label><input type="checkbox" id="p11zm2mon"> 2 zm</label></td>
@@ -409,7 +415,8 @@
           <td><label><input type="checkbox" id="wholeDayP11"> zgoda</label></td>
         </tr>
         <tr>
-          <td><input type='text' id="name12" placeholder='Imię pracownika'> <button class="full" id="full12">Full</button>
+          <td><input type='text' id="name12" placeholder='Imię pracownika'> <button class="full"
+              id="full12">Full</button>
           </td>
           <td><label><input type="checkbox" id="p12zm1mon"> 1 zm</label></td>
           <td><label><input type="checkbox" id="p12zm2mon"> 2 zm</label></td>
@@ -428,29 +435,27 @@
           <td><label><input type="checkbox" id="wholeDayP12"> zgoda</label></td>
         </tr>
       </table>
-    </div>
+    </section>
   </div>
 
   <footer class="footer">
-    <div class="container-footer">
-      <div class="footer-content">
-        <a href="https://www.flaticon.com/free-icons/refresh" title="refresh icons">Refresh icons created by Icon Place
-          - Flaticon</a>
-        <a href="https://www.flaticon.com/free-icons/printer" title="printer icons">Printer icons created by logisstudio
-          - Flaticon</a>
-        <a href="https://kebabkrakow24.pl" title="logo icons">Logo taken from the official site "EFES KEBAB"</a>
-      </div>
-      <div class="autor">
-        © 2023 Created by Volodymyr Romanov
-      </div>
-      <div class="contact">
-        Contact: romanov.vw@gmail.com
-      </div>
+    <div class="footer-content">
+      <a href="https://www.flaticon.com/free-icons/refresh" title="refresh icons">Refresh icons created by Icon Place
+        - Flaticon</a>
+      <a href="https://www.flaticon.com/free-icons/printer" title="printer icons">Printer icons created by logisstudio
+        - Flaticon</a>
+      <a href="https://kebabkrakow24.pl" title="logo icons">Logo taken from the official site "EFES KEBAB"</a>
+    </div>
+    <div class="autor">
+      © 2023 Created by Volodymyr Romanov
+    </div>
+    <div class="contact">
+      Contact: romanov.vw@gmail.com
     </div>
   </footer>
-
-  <script src="JS/for-drivers-basztowa.js"></script>
+  <script src="JS\for-drivers-basztowa.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.0/html2canvas.min.js"></script>
+  <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script> -->
 </body>
 
 </html>
