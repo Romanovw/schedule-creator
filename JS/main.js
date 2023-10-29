@@ -552,13 +552,14 @@ nameAuto.addEventListener("click", function () {
   name1.value = "Gosia";
   name2.value = "Karolina";
   name3.value = "Olga";
-  name4.value = "Dima";
+  name4.value = "Nastia_A";
   name5.value = "Irena";
   name6.value = "Nastia";
   name7.value = "Kasia";
   name8.value = "Michał";
   name9.value = "Sylwia";
   name10.value = "Władek";
+  name10.value = "Jagoda";
 });
 
 // Generating a random element
