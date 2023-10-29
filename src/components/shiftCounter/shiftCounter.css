@@ -1,0 +1,40 @@
+.countSh {
+    border-collapse: collapse;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.7);
+    margin-left: 2rem;
+    margin-top: 6.5rem;
+    max-height: 100%;
+  }
+  .countSh th {
+    border: 1px solid #c9c6c6;
+    background-color: #fafafa;
+    padding: 0.7em;
+    text-align: center;
+    font-weight: bold;
+    font-size: 0.8em;
+    color: #333;
+    text-transform: uppercase;
+    width: 3rem;
+  }
+
+  .countSh td {
+    border: 1px solid #c9c6c6;
+    padding: 0.4em;
+    text-align: center;
+    font-weight: normal;
+    color: #666;
+    position: relative;
+    transition: background-color 0.3s ease;
+    font-size: 0.8em;
+    vertical-align: middle;
+  }
+
+
+  .countSh tr:nth-child(even) {
+    background-color: white;
+  }
+  .countSh tr:hover td:hover {
+    background-color: #ebebeb;
+  }

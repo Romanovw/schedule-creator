@@ -11,7 +11,7 @@
     --grey-5: #969595;
     --grey-6: #8C8C8C;
     --red: #CC5520;
-    --footer: #191919;
+    
     --blur: #0000009C;
     --blur2: #000000BF;
 }
@@ -26,7 +26,6 @@
     height: 6.38rem;
     background-color: var(--header);
     display: flex;
-    position: absolute;
     justify-content: center;
     font-family: Montserrat;
 }

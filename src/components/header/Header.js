@@ -14,10 +14,10 @@ function Header() {
       <header className={`header ${isDropdownVisible ? 'transparent' : ''}`}>
         <div className="header-container">
           <button className="nav-btn" onClick={toggleDropdown}>•••</button>
-          <NavLink to="/posts" className="header-link-logo"><img className="header-logo" src={logo} alt="logo-efes" /></NavLink>
+          <NavLink to="/" className="header-link-logo"><img className="header-logo" src={logo} alt="logo-efes" /></NavLink>
           <nav className={`nav-menu ${isDropdownVisible ? 'dropdown' : ''}`}>
             <ul className="nav-menu-list">
-              <li className="nav-item"><NavLink to="/kitchen-basztowa" className="nav-link" activeClassName="active">Kuchnia Basztowa</NavLink></li>
+              <li className="nav-item"><NavLink to="/" className="nav-link" activeClassName="active">Kuchnia Basztowa</NavLink></li>
               <li className="nav-item"><NavLink to="/drivers-basztowa" className="nav-link" activeClassName="active">Kierowcy Basztowa</NavLink></li>
               <li className="nav-item"><NavLink to="/kitchen-mackiewicza" className="nav-link" activeClassName="active">Kuchnia Mackiewicza</NavLink></li>
               <li className="nav-item"><NavLink to="/drivers-mackiewicza" className="nav-link" activeClassName="active">Kierowcy Mackiewicza</NavLink></li>
