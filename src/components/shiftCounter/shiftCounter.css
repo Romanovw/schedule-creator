@@ -31,10 +31,10 @@
     vertical-align: middle;
   }
 
-
   .countSh tr:nth-child(even) {
     background-color: white;
   }
   .countSh tr:hover td:hover {
     background-color: #ebebeb;
   }
+  
